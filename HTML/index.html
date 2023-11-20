@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hellen Silva">
+    <meta name="description" content="Atividade para estudos de tags e elementos para HTML">
+    <meta name="keywords" content="html, semantica, bold, italico, footer">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Atividade tags HTML semântica</title>
+</head>
+
+<body>
+    <h1>Atividade tags HTML semântica</h1>
+    <h2>Uso de negrito</h2>
+    <p>Posso fazer o negrito usando a tag <b>B</b>, mas ela não tem semântica</p>
+    <p>É melhor usar a tag <strong>STRONG</strong>, pois ela é semântica</p>
+
+    <h2>Uso do Itálico/ênfase</h2>
+    <p>Posso usar a tag i para fazer um <i>ITÁLICO</i>, mas não terá valor semântico</p>
+    <p>É melhor usar a tag <em>EM</em>, pois ela é semântica e passa o significado de ênfase naquele trecho de texto</p>
+
+    <h2>Texto marcado</h2>
+    <p>É possível fazer um texto marcado com a tag <mark>MARK</mark></p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> </p>
+
+    <h1>Texto deletado</h1>
+    <p>Podemos usar a tag DEL para indicar <del>texto foi excluído</del></p>
+
+    <h1>Texto insirido</h1>
+    <p>Podemos <ins>marcar um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois usando a
+        tag INS</del></p>
+    <p> Podemos também <u>usar a tag U</u> para sublinhar, porém ela é não semântica </p>
+
+    <h1>Texto sobrescrito</h1>
+    <p>Utilizar SUP para coisas do tipo x<sup>20</sup></p>
+
+    <h1>Texto subrescrito</h1>
+    <p>Utilizar SUB para coisas do tipo H<sub>2O</sub></p>
+    <h1>Texto pré-formatado</h1>
+    <p>Usar a tag PRE</p>
+    <pre>                          Longe
+                    Médio
+             Perto     
+    </pre>
+    <h1>Código-fonte com CODE</h1>
+    <p>O comando <code>document.getElementById('teste') é escrito em linguagem JavaScript</code></p>
+
+    <h1>Código-fonte com CODE + PRE</h1>
+    <pre> <code>
+num=int(input("Digite um número"))
+if num %2 == 0;
+    printf (f 'O número {num} é PAR')
+    else:
+    printf (f 'O número {num} é ÍMPAR')
+    print ("Fim do programa") 
+    &lt;html&gt;
+    &lt;body&gt;
+    &lt;p&gt; TESTE &lt;p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+ </code></pre>
+
+ <h1>Citações</h1>
+ <p>Posso usar CITE, para citações de obras, autores ou termos técnicos, exemplo</p>
+ <p> O advento do estilo em cascata <cite>Cascading Style Sheet - CSS</cite> possibitou inúmeras possibilidades quanto à apresentação de um conteúdo em uma página HTML</p>
+ <h1>Também posso usar Q para citações comuns:</h1>
+ <p>Como diria o pai de um amigo, <q>"O computador é um burro muito rápido"</q></p>
+
+ <p>Para citações maiores, devo usar o BLOCKQUOTE. Também posso combinar com o CITE</p>
+ <p>Trecho dolivro <cite>Admirável Mundo Novo, de Aldous Huxley</cite></p>
+ <p><blockquote cite="https://www.amazon.com.br/Admir%C3%A1vel-mundo-Aldous-Leonard-Huxley/dp/8525056006/ref=asc_df_8525056006/?tag=googleshopp00-20&linkCode=df0&hvadid=379773314816&hvpos=&hvnetw=g&hvrand=3112751266109622370&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-786135644617&psc=1>"> "Não é de admirar que esses pobres pré-modernos fossem loucos, perversos e desventurados. Seu mundo não lhes permitia aceitar as coisas naturalmente, não os deixava ser sãos de espírito, virtuosos, felizes"</blockquote></p>
+ <h1>Abreviações com ABRIR</h1>
+ <p> Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr>
+e <abbr title="Cascading Style Sheets">CSS</abbr> e estou gostando.</p>
+
+<h1>Texto Invertido</h1>
+<p>Você pode escrever com texto invertido usando tag BDO com atributo DIR="RTL"</p>
+<p> <bdo dir="rtl"> Este é um exemplo</bdo></p>
+
+<h1>Informações de contato</h1>
+<p>Usar a tag ADDRESS</p>
+<address>
+    Voce pode contatar o autor em <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+    Se encontrar qualquer bug, por favor <a href="mailto:webmaster@somedomain.com">contate o administrador do site</a>.<br>
+    Você tambem pode querer nos visitar:<br>
+    Mozilla Foundation<br>
+    1981 Landings Drive<br>
+    Building K<br>
+    Mountain View, CA 94043-0801<br>
+    USA
+    <h1>Cabeçalho</h1>
+    <p>Para indicar que aquele conteúdo é um cabeçalho, utilize a tag HEADER</p>
+    <header>Eu sou um elemento que que faz parte do cabeçalho da página</header>
+    <p>Também posso fazer um agroupamento de cabeçalhos com a tag HGROUP</p>
+    <hgroup class"cabecalhos-noticias" >
+<h1>Sou um título principal</h1>
+<h2>Eu sou um subtítulo</h2></hgroup>
+
+    <h1>Rodapé</h1>
+    <p>Para indicar que aquele conteúdo é um rodapé, utilize a tag FOOTER</p>
+    <footer>Eu sou um elemento que que faz parte do rodapé da página</footer>
+  </address>
+
+  <h1>Diferença entre SECTION e ARTICLE</h1>
+  <p>
+    <em> SECTION e ARTICLE
+        "Qual a diferença?", você pode estar se perguntando. Ambos os elementos são usados para seccionar o conteúdo – e, sim, eles definitivamente podem ser intercambiáveis. É uma questão de analisar cada situação. O HTML4 nos oferecia somente um tipo de elemento container, a <div>. Embora ela ainda seja usada em HTML5, ainda temos a possibilidade de substituí-la em duas maneiras, usando SECTION e ARTICLE.
+            <pre>Os elementos SECTION  e ARTICLE são conceitualmente similares e intercambiáveis. Para decidir qual deles você deve escolher, observe o que citaremos abaixo:
+
+                1. Um ARTICLE tem como objetivo ser independentemente distribuível ou reutilizável.
+                <html>
+                2. Uma SECTION é um temático agrupamento de conteúdos.
+            </pre>
+  </p>
+  <h1>FIGURE e FIGCAPTION</h1>
+  <p>FIGURE serve para inserir conteúdos de imagens, enquanto FIGCAPTION é destinado às legendas dessa imagem</p>
+  <h1>Time</h1>
+  <p>O elemento time permite que uma data no formato ISO 8601 não ambígua seja adicionada a uma versão mais amigável para leitura humana daquela data.
+    <pre><code lang="html">
+        <time datetime="2017-10-31T11:21:00+02:00">Terça, 31 Outubro 2017</time>
+        <p>or que se preocupar com time? Embora humanos possam eliminar ambiguidades e ler o tempo de maneiras normais, os computadores podem ler datas em formato ISO 8601 e ver a data, a hora e o fuso horário.</p>
+    </code></pre>
+  </p>
+</body>
+
+</html>
