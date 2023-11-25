@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <script>
+        console.log ("Olá, mundo!")
+
+        // prompt("Informe seu nome:")
+
+        // alert("Olá, mundo!")
+
+        // confirm("Você deseja enviar os dados?")
+
+        //entrada de dados
+        const nome =prompt("Informe seu nome:")
+        const sobrenome = prompt ("Informe o seu sobrenome:")
+        const anoNascimentoPessoa = prompt("Informe o ano do seu nascimento: ")
+        let anoAtual = 2023;
+        let idadePessoa;
+        let mesesPessoa;
+        let diasPessoa;
+        let horasPessoa;
+        let minutosPessoa;
+        let segundosPessoa;
+
+
+
+        // processamento
+        //informe o ano de nascimento e em seguida mostrar a idade da pessoa:
+        idadePessoa = anoAtual - anoNascimentoPessoa 
+        mesesPessoa = idadePessoa * 12;
+        diasPessoa =  idadePessoa * 365;
+        horasPessoa = idadePessoa * 24;
+        minutosPessoa = idadePessoa * 60;
+        segundosPessoa = idadePessoa * 3600;
+
+
+
+        //Saída de dados
+        console.log ("Olá, Mundo!")
+        //concatenar: união de duas ou mais strings, feito com o operador "+"
+        console.log ("o nome da pessoa é: " + nome + "e o sobrenome é: " + sobrenome);
+
+        //interpolar: incorporar variáveis dentro da string
+        alert (`o nome da pessoa é: ${nome} e o sobrenome é: ${sobrenome} e a idade é de: ${idadePessoa} anos, ${mesesPessoa} meses,
+         ${diasPessoa} dias, ${horasPessoa} horas, ${minutosPessoa} minutos e ${segundosPessoa} segundos `);
+
+    </script>
+    
+</body>
+</html>
