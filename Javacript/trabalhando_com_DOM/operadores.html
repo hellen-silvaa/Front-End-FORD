@@ -8,9 +8,38 @@
 <body>
     <script>
         console.log ("Olá, mundo!")
-        alert("Olá, mimdo!")
 
-        confirm("Você deseja enviar os dados?")
+        // prompt("Informe seu nome:")
+
+        // alert("Olá, mundo!")
+
+        // confirm("Você deseja enviar os dados?")
+
+        //entrada de dados
+        const nome =prompt("Informe seu nome:")
+        const sobrenome = prompt ("Informe o seu sobrenome:")
+
+        console.log (nome + sobrenome)
+
+        //concatenar: união de duas ou mais strings, feito com o operador "+"
+        console.log ("o nome da pessoa é: " + nome + "e o sobrenome é: " + sobrenome);
+
+        //interpolar: incorporar variáveis dentro da string
+        console.log (`o nome da pessoa é: ${nome} e o sobrenome é: ${sobrenome}`);
+
+        //informe o ano de nascimento e em seguida mostrar a idade da pessoa:
+
+        //entrada de dados
+        const anoNascimentoPessoa = prompt("Informe o ano do seu nascimento: ");
+        const anoAtual = new Date().getFullYear();
+        
+
+        // processamento
+
+        const idade = anoAtual - anoNascimentoPessoa;
+
+        //saída de dados
+
     </script>
     
 </body>
