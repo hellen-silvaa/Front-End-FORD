@@ -18,32 +18,21 @@
         //entrada de dados
         const nome =prompt("Informe seu nome:")
         const sobrenome = prompt ("Informe o seu sobrenome:")
+        const anoNascimentoPessoa = prompt("Informe o ano do seu nascimento: ")
         let anoAtual = 2023;
         let idadePessoa;
 
-        console.log (nome + sobrenome)
+        // processamento
+        //informe o ano de nascimento e em seguida mostrar a idade da pessoa:
+        idadePessoa = anoAtual - anoNascimentoPessoa 
 
+        //Saída de dados
+        console.log ("Olá, Mundo!")
         //concatenar: união de duas ou mais strings, feito com o operador "+"
         console.log ("o nome da pessoa é: " + nome + "e o sobrenome é: " + sobrenome);
 
         //interpolar: incorporar variáveis dentro da string
-        console.log (`o nome da pessoa é: ${nome} e o sobrenome é: ${sobrenome}`);
-
-        //informe o ano de nascimento e em seguida mostrar a idade da pessoa:
-        idadePessoa = anoAtual - anoNascimentoPessoa 
-
-        //entrada de dados
-        const anoNascimentoPessoa = prompt("Informe o ano do seu nascimento: ");
-        const anoAtual = new Date().getFullYear();
-        
-
-        // processamento
-
-        const idade = anoAtual - anoNascimentoPessoa;
-
-        //saída de dados
-
-        console.log("A idade da pessoa é: " )
+        alert (`o nome da pessoa é: ${nome} e o sobrenome é: ${sobrenome} e a idade é de: ${idadePessoa} anos`);
 
     </script>
     
