@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operadores</title>
+    <title>Operadores01</title>
 </head>
 
 <body>
@@ -18,17 +18,23 @@
             let horas = 24
             let minutos = 60
             let segundos = 3600
+
             //entrada de dados
-            const nome = prompt("Informe seu primeiro nome:")
-            const idade = prompt("Informe qual a sua idade:")
+            const nomePessoa = prompt("Informe seu primeiro nome:")
+            const idadePessoa = prompt("Informe qual a sua idade:")
 
             //processamento dos dados
             let idadeMeses = idadePessoa * meses
             let idadeDias = idadePessoa * dias
-            let idadeHoras = idadePessoa * horas
-            let idadeMinutos = idadePessoa * minutos
-            let idadeSegundos = idadePessoa * segundos
+            let idadeHoras = idadeDias * horas
+            let idadeMinutos = idadeHoras * minutos
+            let idadeSegundos = idadeMinutos * segundos
 
             //saída de dados
             alert(`nome: ${nomePessoa}, idade em meses: ${idadeMeses}; idade em Dias: ${idadeDias}; idade em Horas: ${idadeHoras};
-            idade em Minutos: ${idadeMinutos}; idade em Segundos: ${idadeSegundos};)
+            idade em Minutos: ${idadeMinutos}; idade em Segundos: ${idadeSegundos}`)
+
+        </script>
+    
+</body>
+</html>
