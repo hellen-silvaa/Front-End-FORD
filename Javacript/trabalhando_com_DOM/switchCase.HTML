@@ -33,7 +33,8 @@
                 //saída de dado
                 alert("A opção que o usuário informou é Coca-Cola")
 
-                let respostaUser = prompt("Você deseja acrescentar gelo e limão?")
+                //toLocaleLowerCase: etorna o valor da string original convertido para minúsculo.
+                let respostaUser = toLocaleLowerCase (prompt("Você deseja acrescentar gelo e limão?") )
                 respostaUser == "sim" ? alert("A sua bebida terá gelo e limão") :  alert("Ok, sem gelo e sem limão")
 
                 break;
