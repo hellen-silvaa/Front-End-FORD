@@ -15,29 +15,29 @@
         //Se a média <= 5 retorna RECUPERAÇÃO;
         //Se a média >=6 retorna APROVADO;
 
-
-        
         //entrada de dados
-        const primeiraNota =  parseInt (prompt("Informe sua primeira nota:"))
-        const segundaNota = parseInt (prompt("Informe sua segunda nota:"))
-        const terceiraNota = parseInt (prompt("Informe sua terceira nota:"))
-        const quartaNota = parseInt (prompt("Informe sua quarta nota:"))
+        const primeiraNota = parseInt(prompt("Informe sua primeira nota:"))
+        const segundaNota = parseInt(prompt("Informe sua segunda nota:"))
+        const terceiraNota = parseInt(prompt("Informe sua terceira nota:"))
+        const quartaNota = parseInt(prompt("Informe sua quarta nota:"))
 
 
         // processamento
         notasAluno = (primeiraNota + segundaNota + terceiraNota + quartaNota) / 4
 
-        if(media == 0) {
+
+        //saída de dados
+        if (notasAluno == 0) {
             alert("REPROVADO")
-        }else if (media <=5){
-            alert ("RECUPERAÇÃO")
-        } else   {
+        } else if (notasAluno <= 5) {
+            alert("RECUPERAÇÃO")
+        } else {
             alert("APROVADO")
         }
 
         //Saída de dados
         //interpolar: incorporar variáveis dentro da string
-        // const resultado = calcularMedia(notasAluno);
+        // const resultado = calcularnotasAluno(notasAluno);
         // console.log (resultado);
         // alert(A média do aluno é: ${mediaAluno} e ela está : ${let});
 
