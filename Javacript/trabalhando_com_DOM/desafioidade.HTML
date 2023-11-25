@@ -12,51 +12,46 @@
         //crie um algoritimo que calcule a idade de uma pessoa em
         //Meses - dias - horas - minutos - segundos
 
-            //declara
-            let meses = 12
-            let dias = 365
-            let horas = 24
-            let minutos = 60
-            let segundos = 3600
+        //declara
+        let meses = 12
+        let dias = 365
+        let horas = 24
+        let minutos = 60
+        let segundos = 3600
 
-            //entrada de dados
-            const nomePessoa = prompt("Informe seu primeiro nome:")
-            const idadePessoa = prompt("Informe qual a sua idade:")
+        //entrada de dados
+        const nomePessoa = prompt("Informe seu primeiro nome:")
+        const idadePessoa = prompt("Informe qual a sua idade:")
 
-            //processamento dos dados
-            let idadeMeses = idadePessoa * meses
-            let idadeDias = idadePessoa * dias
-            let idadeHoras = idadeDias * horas
-            let idadeMinutos = idadeHoras * minutos
-            let idadeSegundos = idadeMinutos * segundos
+        //processamento dos dados
+        let idadeMeses = idadePessoa * meses
+        let idadeDias = idadePessoa * dias
+        let idadeHoras = idadeDias * horas
+        let idadeMinutos = idadeHoras * minutos
+        let idadeSegundos = idadeMinutos * segundos
 
-            // //Decisões (if - else)
-            // if (idadePessoa <= 0 || idadePessoa >= 100) {
-            //     alert("A idade da pessoa tem que ser maior que 0 e menor que 100")}
-               
+        // //Decisões (if - else)
+        // if (idadePessoa <= 0 || idadePessoa >= 100) {
+        //     alert("A idade da pessoa tem que ser maior que 0 e menor que 100")}
 
-            // else{
-            
-            //     alert(`nome: ${nomePessoa}, idade em meses: ${idadeMeses}; idade em Dias: ${idadeDias}; idade em Horas: ${idadeHoras};
-            // idade em Minutos: ${idadeMinutos}; idade em Segundos: ${idadeSegundos}`)
-            // }
 
-            //condicional Ternária
-            idadePessoa <= 0 || idadePessoa >= 100 ? alert("A idade da pessoa tem que ser maior que 0 e menor que 100") : 
-                alert(
-                    `nome: ${nomePessoa},
+        // else{
+
+        //     alert(`nome: ${nomePessoa}, idade em meses: ${idadeMeses}; idade em Dias: ${idadeDias}; idade em Horas: ${idadeHoras};
+        // idade em Minutos: ${idadeMinutos}; idade em Segundos: ${idadeSegundos}`)
+        // }
+
+        //condicional Ternária
+        idadePessoa <= 0 || idadePessoa >= 100 ? alert("A idade da pessoa tem que ser maior que 0 e menor que 100") :
+            alert(
+                `nome: ${nomePessoa},
                     idade em meses: ${idadeMeses};
                     idade em Dias: ${idadeDias}; 
                     idade em Horas: ${idadeHoras};
                     idade em Minutos: ${idadeMinutos};
                     idade em Segundos: ${idadeSegundos}`)
+    </script>
 
-
-            
-
-
-           
-        </script>
-    
 </body>
+
 </html>
