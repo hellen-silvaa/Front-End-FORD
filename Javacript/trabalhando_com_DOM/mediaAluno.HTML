@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média aluno </title>
+</head>
+
+<body>
+    <script>
+        //Crie um algoritmo para calcular a média de um aluno. Considere que o Aluno possui 4 notas;
+        // A média do aluno deve ser > 6;
+        //Se a média == 0 retorna REPROVADO;
+        //Se a média <= 5 retorna RECUPERAÇÃO;
+        //Se a média >=6 retorna APROVADO;
+
+        //entrada de dados
+        const primeiraNota = prompt("Informe sua primeira nota:")
+        const segundaNota = prompt("Informe sua segunda nota:")
+        const terceiraNota = prompt("Informe sua terceira nota:")
+        const quartaNota = prompt("Informe sua quarta nota:")
+
+
+        // processamento
+        notasAluno = ((primeiraNota + segundaNota + terceiraNota + quartaNota) / 4)
+
+        if(notasAluno == 0 ) {
+            alert("REPROVADO")
+        }else{
+            if  (notasAluno <= 5) {
+         
+            alert("RECUPERAÇÃO")
+         } else {
+            if (notasAluno >= 6) {              
+                alert("APROVADO")
+            }
+         }
+        }
+
+        //Saída de dados
+        //interpolar: incorporar variáveis dentro da string
+        // const resultado = calcularMedia(notasAluno);
+        // console.log (resultado);
+        // alert(`A média do aluno é: ${mediaAluno} e ela está : ${let}`);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
