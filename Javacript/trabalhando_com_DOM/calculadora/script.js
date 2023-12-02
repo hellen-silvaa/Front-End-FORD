@@ -7,13 +7,13 @@ function Calcular() {
 
     //Validação para o usuário não digitar palavras e apenas números
     //A propriedade global NaN é um valor especial que significa Not-A-Number (não é um número).
-    if (NaN(n1) && NoN(n2)) {
-        alert("Somente números")
-    }
+    // if (NaN(n1) && NoN(n2)) {
+    //     alert("Somente números")
+    // }
 
     switch (operacao) {
         case 'Somar':
-            resultado = $ {n1} + $ {n2}
+            resultado = n1 + n2
             
             alert(`O resultado da soma é: ${resultado}`)
 
