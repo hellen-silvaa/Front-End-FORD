@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switch Case</title>
 </head>
+
 <body>
     <script>
-//entrada de dados
+        //entrada de dados
         let num1 = parseFloat(prompt('Digite o primeiro número:'));
         let num2 = parseFloat(prompt('Digite o segundo número:'));
 
 
-//menu opções
-const escolhaUser = Number (prompt(`
+        //menu opções
+        const escolhaUser = Number(prompt(`
 Escolha uma opção:
 [1] - Soma
 [2] - Subtração
@@ -23,18 +24,18 @@ Escolha uma opção:
 
 `))
 
-//processamento
- switch (escolhaUser) {
+        //processamento
+        switch (escolhaUser) {
 
-             case 1:
+            case 1:
                 const calculoSoma = num1 + num2;
-                
+
                 alert(`Resultado de ${num1} +  ${num2} = ${calculoSoma}!`)
                 break;
-            
+
             case 2:
                 const calculoSub = num1 - num2;
-                
+
                 alert(`Resultado de ${num1} -  ${num2} = ${calculoSub}!`)
                 break;
 
@@ -42,22 +43,23 @@ Escolha uma opção:
                 const calculoDiv = num1 / num2
 
                 num1 == 0 || num2 == 0 ? alert("Não é possível dividir por 0") : alert(`Resultado de ${num1} /  ${num2} = ${calculoDiv}!`)
-                
+
                 alert(`Resultado de ${num1} /  ${num2} = ${calculoDiv}!`)
                 break;
 
             case 4:
-                    const calculoMult = num1 * num2
+                const calculoMult = num1 * num2
                 alert(`O resultado de ${num1} * ${num2} = ${calculoMult}`)
                 break;
-        
+
             default:
                 alert("opção inválida!")
-                break;tch-case para resolver o problema
- }
+                break;
+        }
 
-           
 
-</script>
- </body>
- </html>
+
+    </script>
+</body>
+
+</html>
