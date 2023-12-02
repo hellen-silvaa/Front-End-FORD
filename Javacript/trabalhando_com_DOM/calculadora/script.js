@@ -1,8 +1,8 @@
 function Calcular() {
 
-    let n1 = parseInt(document.getElementById('num1'))
-    let n2 = parseInt(document.getElementById('num2'))
-    let operacao = document.getElementById('operacao')
+    let n1 = parseInt(document.getElementById('num1') .value)
+    let n2 = parseInt(document.getElementById('num2') .value)
+    let operacao = document.getElementById('operacao') .value
     let resultado;
 
     //Validação para o usuário não digitar palavras e apenas números
@@ -12,23 +12,36 @@ function Calcular() {
     }
 
     switch (operacao) {
-        case value:
-
-            break;
-
-        case value:
-
-            break;
-
-        case value:
-
-            break;
+        case 'Somar':
+            resultado = $ {n1} + $ {n2}
             
-        case value:
+            alert(`O resultado da soma é: ${resultado}`)
+
+            break;
+
+        case 'Subtrair':
+            resultado = n1 - n2
+
+            alert(`O resultado da subtração é: ${resultado}`)
+
+            break;
+
+        case 'Multiplicar':
+            resultado = n1 * n2
+
+            alert(`O resultado da multiplicação é: ${resultado}`)
+
+            break;
+
+        case 'Dividir':
+            resultado = n1 / n2
+
+            alert(`O resultado da divisão é: ${resultado}`)
 
             break;
 
         default:
+            alert('Opção inválida')
             break;
     }
 
