@@ -9,39 +9,40 @@
 
 <body>
     <script>
+
+                        // FOR indicado pra array
+                        // WHILE (verificações mais simples)
+                        // WHILE DO (verificações mais complexo)
+
 //inicio loop
 //inicializador, condição, incremento
-for (let passo = 0, passo <5; passo++) {
-    //Executa 5 vezes, com os valores de passos
-    console.log ("Ande um passo para o leste");
-}
+// for 
+
+// for (let passo = 0, passo <5; passo++) {
+//     //Executa 5 vezes, com os valores de passos
+//     console.log ("Ande um passo para o leste");
+// }
 
 //intrução while
 
+    //senha digitada !=6
 
+    //entrada de dados
 
+    let senhaDigitada = prompt ("informe a senha até 6 caracteres:")
 
+    //processamento de dados
+    while (senhaDigitada.lenght !==6) {
+        alert ('a senha informada não atende aos requisitos. Informe uma senha de 1 até 6')
+        
+        senhaDigitada = prompt("Informe a senha novamente:")
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //saída de dados
+    alert("Entrando no sistema...")
 
 
 
 </script>
 </body>
-
 </html>
