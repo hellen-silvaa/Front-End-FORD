@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switch Case</title>
 </head>
-<!-- DESAFIO 2: 
+    <!-- DESAFIO 2: 
 crie uma calculadora que irá capturar qual operação aritimética o usuário deseja fazer
 utilize switch-case para resolver o problema
 
@@ -25,19 +25,29 @@ tem que conter:
 
 <body>
     <script>
-
-        alert(`
-
-        `)
+        if (resultado !==undefined){
+            console.log ()
+        }
 
         //entrada de dados
-        const  = Number(prompt("Qual opção de bebida você deseja escolher?"))
+        const  num1= parseFloat(prompt('Digite o primeiro número do calculo'));
+        const  num2= parseFloat(prompt('Digite o segundo número do calculo'));
+        const operation = prompt('Digite a operação desejada exemplo: *, /, +; -');
 
         //processamento
+        switch (operation) {
 
-        let respostaUser;
+            case '*':
+                resultado = num1 * num2;
+                break;
+        }
+        //saída de dados
+        console.log (`Primeiro número: ${num1}`)
+        console.log (`Segundo número: ${num2}`)
+        console.log (`Resultado da operação: ${operation} : ${resultado}`)
 
-        switch (opcaoUsuario) {
-            case 1:
+    </script>
+</body>
 
-            //saída de dados
+</html>
+           
