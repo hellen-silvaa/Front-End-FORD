@@ -30,12 +30,16 @@
         //entrada de dados
 
         let senhaDigitada = prompt("informe a senha até 6 caracteres:")
+        let contador = 0;
 
         //processamento de dados
-        while (senhaDigitada.length !== 6) {
+        while (senhaDigitada.length !== 6 && contador <3)  {
             alert('a senha informada não atende aos requisitos. Informe uma senha de 1 até 6')
 
             senhaDigitada = prompt("Informe a senha novamente:")
+
+            contador ++
+            alert("Senha Bloqueada")
         }
         //saída de dados
         alert("Entrando no sistema...")
