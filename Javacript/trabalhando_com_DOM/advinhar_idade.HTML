@@ -18,9 +18,10 @@
 
         //enquanto idade for DIFERENTE de 54
         //operador relacional (!==)
-        while (idadePericles !== 54 && tentativa <3) {
+        while (idadePericles !== 54 && tentativa < 5) {
             //condição se for verdadeira
             alert("errouuuu, tente novamente")
+            tentativa++
 
             //operador ternário para dizer ao usuário se ele está mais perto de acertar a idade
             idadePericles < 54 ? alert("o péricles é mais velho") : alert("o péricles é mais novo!!")
@@ -30,12 +31,16 @@
 
 
             idadePericles = Number(prompt("qual é a idade do périclão ?"))
-
-            if (tentativa ++) {
-                alert('Perdeu')
-            break;                
-            }
         }
+
+            if (idadePericles == 54) {
+             alert('Acertou, parabéns!')   
+
+            }else{
+               alert('Perdeu') 
+            }
+        
+        
 
 </script>
 </body>
