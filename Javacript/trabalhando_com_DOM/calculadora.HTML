@@ -25,9 +25,6 @@ tem que conter:
 
 <body>
     <script>
-        if (resultado !==undefined){
-            console.log ()
-        }
 
         //entrada de dados
         const  num1= parseFloat(prompt('Digite o primeiro número do calculo'));
@@ -39,13 +36,16 @@ tem que conter:
 
             case '*':
                 resultado = num1 * num2;
+                 alert(`Resultado da multiplicação ${num1} ${operation}  ${num2} é  ${resultado}`)
                 break;
         }
+        
         //saída de dados
-        console.log (`Primeiro número: ${num1}`)
-        console.log (`Segundo número: ${num2}`)
-        console.log (`Resultado da operação: ${operation} : ${resultado}`)
-
+    //     if (resultado !==undefined){
+    //     console.log (`Primeiro número: ${num1}`)
+    //     console.log (`Segundo número: ${num2}`)
+    //     console.log (`Resultado da operação: ${operation} : ${resultado}`)
+    // }
     </script>
 </body>
 
