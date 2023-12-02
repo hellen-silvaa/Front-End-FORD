@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switch Case</title>
 </head>
-    <!-- DESAFIO 2: 
-crie uma calculadora que irá capturar qual operação aritimética o usuário deseja fazer
-utilize switch-case para resolver o problema
+<!-- DESAFIO 2: 
+ crie uma calculadora que irá capturar qual operação aritimética o usuário deseja fazer
+ utilize switch-case para resolver o problema
 
-tem que conter:
+ tem que conter:
  entrada de dados;
  perguntar o usuário qual operação ele deseja realizar (*, /, +; -); 
  num1 e num2;
@@ -27,8 +27,8 @@ tem que conter:
     <script>
 
         //entrada de dados
-        const  num1= parseFloat(prompt('Digite o primeiro número do calculo'));
-        const  num2= parseFloat(prompt('Digite o segundo número do calculo'));
+        const num1 = parseFloat(prompt('Digite o primeiro número do calculo'));
+        const num2 = parseFloat(prompt('Digite o segundo número do calculo'));
         const operation = prompt('Digite a operação desejada exemplo: *, /, +; -');
 
         //processamento
@@ -36,35 +36,27 @@ tem que conter:
 
             case '*':
                 resultado = num1 * num2;
-                 alert(`Resultado da multiplicação ${num1} ${operation}  ${num2} é  ${resultado}`)
+                //saída de dados
+                alert(`Resultado da operação ${num1} ${operation}  ${num2} é  ${resultado}!`)
                 break;
-        
 
-            case '/': 
+
+            case '/':
                 resultado = num1 / num2;
-                 alert(`Resultado da divisão ${num1} ${operation}  ${num2} é  ${resultado}!`)
+                alert(parseFloat(`Resultado da operação ${num1} ${operation}  ${num2} é  ${resultado}!`))
                 break;
 
             case '+':
                 resultado = num1 + num2;
-                 alert(`Resultado da soma ${num1} ${operation}  ${num2} é  ${resultado}!`)
-                break; 
-                
+                alert(`Resultado da operação ${num1} ${operation}  ${num2} é  ${resultado}!`)
+                break;
+
             case '-':
                 resultado = num1 - num2;
-                 alert(`Resultado da subtração ${num1} ${operation}  ${num2} é  ${resultado}!`)
+                alert(`Resultado da operação ${num1} ${operation}  ${num2} é  ${resultado}!`)
                 break;
         }
-        
-        
-        //saída de dados
-    //     if (resultado !==undefined){
-    //     console.log (`Primeiro número: ${num1}`)
-    //     console.log (`Segundo número: ${num2}`)
-    //     console.log (`Resultado da operação: ${operation} : ${resultado}`)
-    // }
     </script>
 </body>
 
 </html>
-           
