@@ -14,6 +14,7 @@
         //Adega de bebidas
 
         //menu personalizado
+        //literal template
         alert(`
         Bem vindo a minha adega, escolha uma opção abaixo:
 
@@ -47,8 +48,7 @@
             case 2:
                 // saida de dados
                 alert("A opção que o usuário informou é Fanta-Uva")
-
-                respostaUser = prompt("Você deseja acrescentar gelo na sua bebida? sim ou não?").toLowerCase  // retorna o valor da string original convertido para minúsculo.
+                respostaUser = prompt("Você deseja acrescentar gelo na sua bebida? sim ou não?") .toLowerCase  // retorna o valor da string original convertido para minúsculo.
 
                 //condição para avaliar a resposta do usuário (sim, nao - true or false)
                 respostaUser == 'sim' ? alert("Ok, sua bebida terá gelo") : alert("Ok, sua bebida não terá gelo")
@@ -65,8 +65,11 @@
 
             case 3:
                 // saida de dados
-                alert("A opção que o usuário informou é Cachaça")
+                alert("A opção que o usuário informou é Cachaça") .toLowerCase
                 respostaUser = prompt("Você deseja acrescentar limão?")
+
+                //condição para avaliar a resposta do usuário (sim, nao - true or false)
+                respostaUser == 'sim' ? alert("Ok, sua bebida terá gelo") : alert("Ok, sua bebida não terá gelo")
 
 
                 respostaUser == 'sim' ? alert("Ok, sua bebida terá limão") : alert("Ok, sua bebida não terá limão")
