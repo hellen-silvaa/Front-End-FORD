@@ -17,11 +17,14 @@ fieldset {
     width: 40vw;
     height: 50vh;
     border-radius: 8px;
-    border: 2px solid #fff; /* Adicionando uma borda branca ao redor do campo de formulário */
+    border: 2px solid #fff;
+    /* Adicionando uma borda branca ao redor do campo de formulário */
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 40%, rgba(0, 212, 255, 1) 100%);
     color: white;
-    padding: 20px; /* Adicionando algum espaço interno para o conteúdo */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adicionando uma leve sombra */
+    padding: 20px;
+    /* Adicionando algum espaço interno para o conteúdo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Adicionando uma leve sombra */
 }
 
 .info-flex {
@@ -45,4 +48,5 @@ button {
 
 button:hover {
     background-color: #eee;
+    
 }
