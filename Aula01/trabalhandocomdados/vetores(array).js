@@ -118,4 +118,10 @@ const sortArray = [janeiro,fevereiro,março,abril,maio,junho]
 console.log(sortArray);
 
 sortArray.sort()
-console.log(sortArray)
+console.log(sortArray);
+
+const arraySortNumber = [10,232,542,871,1050]
+
+arraySortNumber.sort ()
+
+console.log(arraySortNumber);
