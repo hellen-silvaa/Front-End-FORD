@@ -8,20 +8,26 @@
 //array em js é heterogenio, ou seja, podemos colocar qualquer coisa, string, int, etc.
 //ainda mais, não possui um tamanho fixo;
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// //    indice  =   0    1   2    3        4 
-// const valores = [18.0, 80, 43, 1.8888, "teste"]
+//    indice  =   0    1   2    3        4 
+const valores = [18.0, 80, 43, 1.8888, "teste"]
 
-// //var(array) -> definindo um indice 10 e atribuindo o valor de 967 para o array
-// valores[10] = 967 // --> incluindo o indice 10 no array
+//var(array) -> definindo um indice 10 e atribuindo o valor de 967 para o array
+valores[10] = 967 // --> incluindo o indice 10 no array
 
-// console.log(`
-//     ${valores[0]}
-//     ${valores[3].toFixed(1)} //limita as casas decimais em 2 após a virgula
-//     ${valores[10]}
-//     ${valores}
-//     ${valores.length} //extensão do nosso array (numeral)
-// `);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+console.log(`
+    ${valores[0]}
+    ${valores[3].toFixed(1)} //limita as casas decimais em 2 após a virgula
+    ${valores[10]}
+    ${valores}
+    ${valores.length} //extensão do nosso array (numeral)
+`);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 //IMPLEMENTAR MÉTODOS DE ARRAY
 
@@ -101,6 +107,8 @@
 
 //=> Arrow Function
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //6-  forEach: executa uma dada função em cada elemento de um array.
 
 const forArray = ['Jubileu', 'Hellen', 'Ivanilson', 'Gabriele']
@@ -111,17 +119,42 @@ forArray.forEach((listarArray) => {
 
 })
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //7-sort 
 //crie um array de nomes e em seguida organize eles em ordem alfabetica
-const sortArray = [janeiro,fevereiro,março,abril,maio,junho]
-console.log(sortArray);
-
+const sortArray = ['janeiro','Fevereiro','março','abril','maio','junho']
+console.log(sortArray)
 sortArray.sort()
 console.log(sortArray);
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 const arraySortNumber = [10,232,542,871,1050]
-
+console.log(arraySortNumber)
 arraySortNumber.sort ()
-
 console.log(arraySortNumber);
+
+
+
+
+//*************Exercício ***************/
+//crie 2 arrays: nomes e sobrenomes
+//crie um terceiro array de nomesCompleto
+//ao final, exiba os nomes completos no console com o foreach
+//é necessário conter pelo menos 5 nomes
+//utilizar arrow functions
+//se necessário, utilize outros métodos de array
+
+
+console.log(nomesCompletosArray);
+const nomesArray = ["Hellen", "Guilherme", "Ivanilson", "Rafael"];
+const sobrenomesArray = ["Silva", "Amorim", "Félix", "Perdigão"];
+
+const nomesCompletosArray = nomes.concat((nomeArray) => `${nomeArray} ${sobrenomesArrays}`);
+
+nomesCompletosArray.forEach((nomesCompletosArray) => {
+console.log(nomesCompletosArray);})
+
+
