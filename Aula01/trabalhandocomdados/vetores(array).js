@@ -148,13 +148,14 @@ console.log(arraySortNumber);
 //se necessário, utilize outros métodos de array
 
 
+const nomesArray = ["Hellen", "Guilherme", "Ivanilson", "Rafael", "Renata"];
+const sobrenomesArray = ["Silva", "Amorim", "Félix", "Perdigão", "Santos" ];
+
+const nomesCompletosArray = nomesArray.forEach(element => {nomesCompletosArray
+    
+});(sobrenomesArray)
 console.log(nomesCompletosArray);
-const nomesArray = ["Hellen", "Guilherme", "Ivanilson", "Rafael"];
-const sobrenomesArray = ["Silva", "Amorim", "Félix", "Perdigão"];
 
-const nomesCompletosArray = nomes.concat((nomeArray) => `${nomeArray} ${sobrenomesArrays}`);
 
-nomesCompletosArray.forEach((nomesCompletosArray) => {
-console.log(nomesCompletosArray);})
 
 
