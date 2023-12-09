@@ -33,7 +33,9 @@ const pushArray = ['girafa', 'leão', 'coala', 'camaleão']
 console.log (pushArray);
 
 //adicionando valores
-pushArray.push()
+pushArray.push("cachorro caramelo")
+
+console.log (pushArray);
 
 //2- pop -> remove o último item do array
 
