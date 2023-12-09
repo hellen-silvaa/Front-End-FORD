@@ -1,9 +1,13 @@
 function Calcular(e) {
-    event.preventDefault()
+    event.preventDefault() // impede de recarregar a página automaticamente
 
+    //valor capturado no input e guardando o calor na variável n1
     let n1 = parseInt(document.getElementById('num1') .value)
+    //valor capturado no input e guardando o calor na variável n2
     let n2 = parseInt(document.getElementById('num2') .value)
+    //operação escolhida pelo usuário (+,-,/,*)
     let operacao = document.getElementById('operacao') .value
+    //
     let resultado;
 
     //Validação para o usuário não digitar palavras e apenas números
@@ -45,6 +49,8 @@ function Calcular(e) {
             alert('Opção inválida')
             break;
     }
+      //
+      document.getElementById('resultado').innerHTML = resultado
 
 }
 
