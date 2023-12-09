@@ -72,7 +72,7 @@ console.log(deleteArray);
 deleteArray.splice(   1    ,       1        ,   'melão')
 console.log (deleteArray)
 
-//4 - filter -> funções 
+//4 - filter -> funções cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
                       0,  1,  2,  3,  4
 const filterArray = [ 1, 50, 20, ,35, 60]
 
@@ -87,4 +87,6 @@ const arrayFiltrado = filterArray.filter ((findArray) => {
 
 //saída de dados
 console.log(arrayFiltrado);
+
+//5 - map -> modifica o array existente -> criar um novo array modificado -. gunções
 
