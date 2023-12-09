@@ -28,18 +28,42 @@
 //MÉTODOS DE ARRAY 1 
 //1 - push -> utilizado para adicionar itens no array (sempre na última posição!)
 //    indice  =        0        1       2          3        
-const pushArray = ['girafa', 'leão', 'coala', 'camaleão']
+// const pushArray = ['girafa', 'leão', 'coala', 'camaleão']
 
-console.log(pushArray);
+// console.log(pushArray);
 
-//adicionando valores
-pushArray.push("cachorro caramelo")
+// //adicionando valores
+// pushArray.push("cachorro caramelo")
 
-//adicionar um ou mais elementos ao início do array.
-pushArray.unshift("Animal01")
+// //adicionar um ou mais elementos ao início do array.
+// pushArray.unshift("Animal01")
 
-console.log(pushArray);
+// console.log(pushArray);
 
-//2- pop -> remove o último item do array
+// //2- pop -> remove o último item do array
+// const popArray = ['Hellen', 'Ana', 'Beatriz', 'Andre', 'invejosos']
+
+
+// console.log (popArray);
+
+// popArray.pop();
+
+// console.log(popArray);
+
+// //remove o último 
+// popArray.pop();
+
+// popArray.shift()
+
+// console.log (popArray);
 
 //3- delete
+const deleteArray = ['pera', 'Uva', 'maça', 'salada mista']
+
+console.log(deleteArray);
+
+delete deleteArray[1]
+
+console.log(deleteArray);
+
+//splice => substituir valores(altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.)
