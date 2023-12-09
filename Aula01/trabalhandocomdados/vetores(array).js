@@ -76,4 +76,4 @@ console.log (deleteArray)
                       0,  1,  2,  3,  4
 const filterArray = [ 1, 50, 20, ,35, 60]
 
-HTMLFormControlsCollection.log(filter)
+console.log(filterArray)
