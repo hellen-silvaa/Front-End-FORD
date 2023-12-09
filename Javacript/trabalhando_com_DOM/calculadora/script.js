@@ -2,11 +2,11 @@ function Calcular(e) {
     event.preventDefault() // impede de recarregar a página automaticamente
 
     //valor capturado no input e guardando o calor na variável n1
-    let n1 = parseInt(document.getElementById('num1') .value)
+    let n1 = parseInt(document.getElementById('num1').value)
     //valor capturado no input e guardando o calor na variável n2
-    let n2 = parseInt(document.getElementById('num2') .value)
+    let n2 = parseInt(document.getElementById('num2').value)
     //operação escolhida pelo usuário (+,-,/,*)
-    let operacao = document.getElementById('operacao') .value
+    let operacao = document.getElementById('operacao').value
     //
     let resultado;
 
@@ -19,32 +19,26 @@ function Calcular(e) {
     switch (operacao) {
         case 'Somar':
             resultado = n1 + n2
-            
-            alert(`O resultado da soma é: ${resultado}`)
-
+            document.getElementById('resultado').innerHTML = resultado
             break;
 
         case 'Subtrair':
             resultado = n1 - n2
-
-            alert(`O resultado da subtração é: ${resultado}`)
-
+            document.getElementById('resultado').innerHTML = resultado
             break;
 
         case 'Multiplicar':
             resultado = n1 * n2
-
-            alert(`O resultado da multiplicação é: ${resultado}`)
-
+            document.getElementById('resultado').innerHTML = resultado
             break;
 
         case 'Dividir':
-            // Verifica se n1 e n2 são zero antes de realizar a divisão
-            if (n1 || n2 !== 0) {
-                resultado = n1 / n2;
-                alert(`O resultado da divisão é: ${resultado}`);
+            if (n2 !== 0 || n2 == 0) {
+                const resp = "Não é possível dividir por zero";
+                document.getElementById('resultado').innerHTML = resp
             } else {
-                alert('Não é possível dividir por zero.');
+                resultado = n1 / n2
+                alert(`O resultado da divisão é: ${resultado}`)
             }
             break;
 
@@ -52,8 +46,8 @@ function Calcular(e) {
             alert('Opção inválida')
             break;
     }
-      //
-      document.getElementById('resultado').innerHTML = resultado
+
+
 
 }
 
