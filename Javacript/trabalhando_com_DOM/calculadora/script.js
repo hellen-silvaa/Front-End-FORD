@@ -46,8 +46,5 @@ function Calcular(e) {
             alert('Opção inválida')
             break;
     }
-
-
-
 }
 
