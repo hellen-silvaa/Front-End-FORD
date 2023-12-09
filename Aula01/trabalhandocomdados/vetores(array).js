@@ -22,3 +22,13 @@ console.log(`
     ${valores}
     ${valores.length} //extensão do nosso array (numeral)
 `);
+
+//IMPLEMENTAR MÉTODOS DE ARRAY
+
+//MÉTODOS DE ARRAY 1 
+//1 - push -> utilizado para adicionar itens no array (sempre na última posição!)
+const pushArray = []
+
+//2- pop -> remove o último item do array
+
+//3- delete
