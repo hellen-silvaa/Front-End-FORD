@@ -76,4 +76,15 @@ console.log (deleteArray)
                       0,  1,  2,  3,  4
 const filterArray = [ 1, 50, 20, ,35, 60]
 
-console.log(filterArray)
+console.log(filterArray);
+
+const arrayFiltrado = filterArray.filter ((findArray) => {
+    console.log (findArray);
+    //bloco execução
+
+    return findArray  > 20
+})
+
+//saída de dados
+console.log(arrayFiltrado);
+
