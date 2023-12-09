@@ -27,9 +27,13 @@ console.log(`
 
 //MÉTODOS DE ARRAY 1 
 //1 - push -> utilizado para adicionar itens no array (sempre na última posição!)
+//    indice  =        0        1       2          3        
 const pushArray = ['girafa', 'leão', 'coala', 'camaleão']
 
-console.log 
+console.log (pushArray);
+
+//adicionando valores
+pushArray.push()
 
 //2- pop -> remove o último item do array
 
