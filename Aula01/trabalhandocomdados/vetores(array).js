@@ -88,5 +88,14 @@ const arrayFiltrado = filterArray.filter ((findArray) => {
 //saída de dados
 console.log(arrayFiltrado);
 
-//5 - map -> modifica o array existente -> criar um novo array modificado -. gunções
+//5 - map -> modifica o array existente -> criar um novo array modificado -. funções
+const mapArray = [10,15,20,25,30,35]
+console.log (mapArray);
+
+//inicio modificação array
+const arrayModificado = mapArray.map (mapArrayModificado => {
+    return mapArrayModificado * 2
+})
+
+console.log (arrayModificado);
 
