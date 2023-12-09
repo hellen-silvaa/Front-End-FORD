@@ -67,3 +67,13 @@ delete deleteArray[1]
 console.log(deleteArray);
 
 //splice => substituir valores(altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.)
+
+// metodo          índice   qntd de valores   novo valor
+deleteArray.splice(   1    ,       1        ,   'melão')
+console.log (deleteArray)
+
+//4 - filter -> funções 
+                      0,  1,  2,  3,  4
+const filterArray = [ 1, 50, 20, ,35, 60]
+
+HTMLFormControlsCollection.log(filter)
