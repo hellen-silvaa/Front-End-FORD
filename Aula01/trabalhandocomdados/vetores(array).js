@@ -53,49 +53,69 @@
 // //remove o último 
 // popArray.pop();
 
-// popArray.shift()
+// // popArray.shift()
 
-// console.log (popArray);
+// // console.log (popArray);
 
-//3- delete
-const deleteArray = ['pera', 'Uva', 'maça', 'salada mista']
+// //3- delete
+// const deleteArray = ['pera', 'Uva', 'maça', 'salada mista']
 
-console.log(deleteArray);
+// console.log(deleteArray);
 
-delete deleteArray[1]
+// delete deleteArray[1]
 
-console.log(deleteArray);
+// console.log(deleteArray);
 
-//splice => substituir valores(altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.)
+// //splice => substituir valores(altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.)
 
-// metodo          índice   qntd de valores   novo valor
-deleteArray.splice(   1    ,       1        ,   'melão')
-console.log (deleteArray)
+// // metodo          índice   qntd de valores   novo valor
+// deleteArray.splice(   1    ,       1        ,   'melão')
+// console.log (deleteArray)
 
-//4 - filter -> funções cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
-                      0,  1,  2,  3,  4
-const filterArray = [ 1, 50, 20, ,35, 60]
+// //4 - filter -> funções cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+//                       0,  1,  2,  3,  4
+// const filterArray = [ 1, 50, 20, ,35, 60]
 
-console.log(filterArray);
+// console.log(filterArray);
 
-const arrayFiltrado = filterArray.filter ((findArray) => {
-    console.log (findArray);
-    //bloco execução
+// const arrayFiltrado = filterArray.filter ((findArray) => {
+//     console.log (findArray);
+//     //bloco execução
 
-    return findArray  > 20
+//     return findArray  > 20
+// })
+
+// //saída de dados
+// console.log(arrayFiltrado);
+
+// //5 - map -> modifica o array existente -> criar um novo array modificado -. funções
+// const mapArray = [10,15,20,25,30,35]
+// console.log (mapArray);
+
+// //inicio modificação array
+// const arrayModificado = mapArray.map ((mapArrayModificado) => {
+//     return mapArrayModificado * 2
+// })
+
+// console.log (arrayModificado);
+
+//=> Arrow Function
+
+//6-  forEach: executa uma dada função em cada elemento de um array.
+
+const forArray = ['Jubileu', 'Hellen', 'Ivanilson', 'Gabriele']
+
+forArray.forEach((listarArray) => {
+
+    return console.log(listarArray);
+
 })
 
-//saída de dados
-console.log(arrayFiltrado);
 
-//5 - map -> modifica o array existente -> criar um novo array modificado -. funções
-const mapArray = [10,15,20,25,30,35]
-console.log (mapArray);
+//7-sort 
+//crie um array de nomes e em seguida organize eles em ordem alfabetica
+const sortArray = [janeiro,fevereiro,março,abril,maio,junho]
+console.log(sortArray);
 
-//inicio modificação array
-const arrayModificado = mapArray.map (mapArrayModificado => {
-    return mapArrayModificado * 2
-})
-
-console.log (arrayModificado);
-
+sortArray.sort()
+console.log(sortArray)
