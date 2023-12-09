@@ -39,10 +39,13 @@ function Calcular(e) {
             break;
 
         case 'Dividir':
-            resultado = n1 / n2
-
-            alert(`O resultado da divisão é: ${resultado}`)
-
+            // Verifica se n1 e n2 são zero antes de realizar a divisão
+            if (n1 || n2 !== 0) {
+                resultado = n1 / n2;
+                alert(`O resultado da divisão é: ${resultado}`);
+            } else {
+                alert('Não é possível dividir por zero.');
+            }
             break;
 
         default:
