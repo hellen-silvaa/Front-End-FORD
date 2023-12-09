@@ -9,19 +9,19 @@
 //ainda mais, não possui um tamanho fixo;
 
 
-//    indice  =   0    1   2    3        4 
-const valores = [18.0, 80, 43, 1.8888, "teste"]
+// //    indice  =   0    1   2    3        4 
+// const valores = [18.0, 80, 43, 1.8888, "teste"]
 
-//var(array) -> definindo um indice 10 e atribuindo o valor de 967 para o array
-valores[10] = 967 // --> incluindo o indice 10 no array
+// //var(array) -> definindo um indice 10 e atribuindo o valor de 967 para o array
+// valores[10] = 967 // --> incluindo o indice 10 no array
 
-console.log(`
-    ${valores[0]}
-    ${valores[3].toFixed(1)} //limita as casas decimais em 2 após a virgula
-    ${valores[10]}
-    ${valores}
-    ${valores.length} //extensão do nosso array (numeral)
-`);
+// console.log(`
+//     ${valores[0]}
+//     ${valores[3].toFixed(1)} //limita as casas decimais em 2 após a virgula
+//     ${valores[10]}
+//     ${valores}
+//     ${valores.length} //extensão do nosso array (numeral)
+// `);
 
 //IMPLEMENTAR MÉTODOS DE ARRAY
 
@@ -30,12 +30,15 @@ console.log(`
 //    indice  =        0        1       2          3        
 const pushArray = ['girafa', 'leão', 'coala', 'camaleão']
 
-console.log (pushArray);
+console.log(pushArray);
 
 //adicionando valores
 pushArray.push("cachorro caramelo")
 
-console.log (pushArray);
+//adicionar um ou mais elementos ao início do array.
+pushArray.unshift("Animal01")
+
+console.log(pushArray);
 
 //2- pop -> remove o último item do array
 
