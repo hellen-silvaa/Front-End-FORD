@@ -26,7 +26,6 @@ excluir: com base no email -->
         let loopBrake = true
         let arrayAgenda = []
 
-
         while (loopBrake) {
 
             // Criação de um menu com as 4 operações que o usuário pode realizar (Cadastrar, listar, atualizar, deletar)
@@ -37,9 +36,10 @@ excluir: com base no email -->
       ---------------------------
         [1] Cadastrar Úsuario
         [2] Vizualizar um úsuario
-        [3] Atualziar um úsuario
-        [4] Excluir um úsuario
-        [5] Sair do programa CRUD
+        [3] Atualziar email
+        [4] Atualizar senha
+        [5] Excluir um úsuario
+        [6] Sair do programa CRUD
        ` ))
 
             //realizar a criação dos métodos com switch case para validar as opções do usuário
@@ -49,26 +49,24 @@ excluir: com base no email -->
             switch (escolhaUsuario) {
                 case 1:
                     //Criar a variável para receber a data atual e exibir na agenda
+
                     let nome = prompt("Informe seu primeiro nome:")
                     let email = prompt("Informe seu email:")
                     let senha = prompt("Informe a sua senha:")
-                    let dataAtual = new Date();
 
-                    arrayAgenda.push({ nome, email, senha, dataAtual })
+                    arrayAgenda.push({ nome, email, senha, dataUniversal })
 
-                    console.log(arrayAgenda)
-
+                    // console.log(arrayAgenda)
                     alert("Úsuario cadastrado com sucesso na agenda!")
-
                     break;
+
 
                 case 2:
                     //listagem dos dados => percorrer o array de objetos (forEach - for)
 
                     let listaDeContatos = "Lista de contatos: \n";
                     for (let listaArray of arrayAgenda) {
-                        listaDeContatos += `Nome: ${listaArray.nome}, Número de telefone: ${listaArray.numTelefone}\n`
-
+                        listaDeContatos += `Nome: ${listaArray.nome}, Email: ${listaArray.email}, Senha:${listaArray.senha},\n`
                     }
                     alert(listaDeContatos)
 
@@ -79,7 +77,8 @@ excluir: com base no email -->
                     //realizar método de atualizar agenda
                     //atualizar: com base no email 
                     let emailAtualizar = prompt("Informe o seu email para realizar a edição:")
-                    let emailBuscado = arrayAgenda.find(findUser => findUser.nome === emailAtualizar)
+                    let emailBuscado = arrayAgenda.find(findUser => findUser.email === emailAtualizar)
+                    
 
                     if (emailBuscado) {
                         emailBuscado.email = prompt("informe o seu novo email:")
@@ -96,10 +95,10 @@ excluir: com base no email -->
                     //atualizar: com base na senha
 
                     let senhaAtualizar = prompt("Informe a sua senha realizar a edição:")
-                    let senhaBuscado = arrayAgenda.find(findUser => findUser.nome === senhaAtualizar)
+                    let senhaBuscado = arrayAgenda.find(findUser => findUser.senha === senhaAtualizar)
 
                     if (senhaBuscado) {
-                        senhaBuscado.email = prompt("informe a sua nova senha:")
+                        senhaBuscado.senha = prompt("informe a sua nova senha:")
                         alert("Senha alterada com sucesso")
                     } else {
                         alert("Nenhum usuário foi encontrado no sistema!")
@@ -108,13 +107,11 @@ excluir: com base no email -->
                     break;
 
 
-
-
                 case 5:
                     //excluir: com base no email -->
 
                     let emailExcluir = prompt("Informe o seu email para excluir da lista:")
-                    let emailBuscadoExcluir = arrayAgenda.findIndex(deleteUser => deleteUser.nome === emailExcluir)
+                    let emailBuscadoExcluir = arrayAgenda.findIndex(deleteUser => deleteUser.email === emailExcluir)
 
                     if (emailBuscadoExcluir !== -1) {
                         arrayAgenda.splice(emailBuscadoExcluir, 1)
