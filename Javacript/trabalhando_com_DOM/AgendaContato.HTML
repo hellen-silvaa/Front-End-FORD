@@ -15,7 +15,7 @@
         //Utilize switch-case while e estruturas condicionais para gerencias as operações.
         let loopBrake = true
         let arrayAgenda = []
- 
+
 
         while (loopBrake) {
 
@@ -54,28 +54,32 @@
 
                     for (let listaArray of arrayAgenda) {
 
-                         listaDeContatos += `Nome: ${listaArray.nome}, Número de telefone: ${listaArray.numTelefone}\n`
-                     
+                        listaDeContatos += `Nome: ${listaArray.nome}, Número de telefone: ${listaArray.numTelefone}\n`
+
                     }
-                    alert (listaDeContatos)
+                    alert(listaDeContatos)
 
                     break;
 
-                case 3:
-                    //Realizar método de atualizar agenda
 
-                    let contatoAtualizar = prompt("Informe o nome para realizar a edição:")
-                    let contatoBuscado = arrayAgenda.find(findUser.nome === contatoAtualizar)
-                    if (contatoBuscado == true){
-                        contatoBuscado.numTelefone = prompt("Informe o seu novo número de celular:")
-                        aler("Usuário cadastrado com sucesso!")
-                    }else{
-                        alert("Nenhum usuário foi encontrado no sitema!")
+                    case 3:
+          //realizar método de atualizar agenda
 
-                    }
-                    
+          let contatoAtualizar = prompt("Informe o nome para realizar a edição:")
+          let contatoBuscado = arrayAgenda.find(findUser => findUser.nome === contatoAtualizar)
 
+          if (contatoBuscado) {
+            contatoBuscado.numTelefone = prompt("informe o novo número de celular:")
+
+            alert("usuário cadastrado com sucesso")
+          }else{
+            alert("Nenhum usuário foi encontrado no sistema!")
+          }
+
+          break;
                     break;
+
+
                 case 4:
                     //Encontrar o úsuario a ser deletado
                     //Informar o nome a ser excluído
@@ -85,17 +89,15 @@
                     let contatoExcluir = prompt("Informe o nome para apagar da lista:")
                     let contatoBuscadoExcluir = arrayAgenda.findIndex(deleteUser => deleteUser.nome === contatoExcluir)
 
-                    if (contatoBuscadoExcluir){
-                        arrayAgenda.splice  (contatoBuscadoExcluir, 1)
+                    if (contatoBuscadoExcluir !==-1) {
+                        arrayAgenda.splice(contatoBuscadoExcluir, 1)
                     }
-                    else{
+                    else {
                         alert("nenhum usuário foi encontrado no sistema!")
                     }
 
-
-                    
-
                     break;
+
                 case 5:
                     alert("Até a próxima, velho amigo.")
 
