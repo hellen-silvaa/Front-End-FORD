@@ -66,8 +66,12 @@
 
                     let contatoAtualizar = prompt("Informe o nome para realizar a edição:")
                     let contatoBuscado = arrayAgenda.find(findUser.nome === contatoAtualizar)
-                    if (contatoBuscado){
+                    if (contatoBuscado == true){
                         contatoBuscado.numTelefone = prompt("Informe o seu novo número de celular:")
+                        aler("Usuário cadastrado com sucesso!")
+                    }else{
+                        alert("Nenhum usuário foi encontrado no sitema!")
+
                     }
                     
 
@@ -78,10 +82,14 @@
                     //Realizar a comparação
                     //Realizar o delete do usuário
 
-                    let contatoDeletar = prompt("Informe o nome para realizar a edição:")
-                    let contatoBuscado = arrayAgenda.find(findUser.nome === contatoDeletar)
-                    if (contatoBuscado){
-                        contatoBuscado.numTelefone = prompt("Informe o seu novo número de celular:")
+                    let contatoExcluir = prompt("Informe o nome para apagar da lista:")
+                    let contatoBuscadoExcluir = arrayAgenda.findIndex(deleteUser => deleteUser.nome === contatoExcluir)
+
+                    if (contatoBuscadoExcluir){
+                        arrayAgenda.splice  (contatoBuscadoExcluir, 1)
+                    }
+                    else{
+                        alert("nenhum usuário foi encontrado no sistema!")
                     }
 
 
