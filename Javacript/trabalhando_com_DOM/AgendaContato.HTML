@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Contato</title>
+</head>
+
+<body>
+    <script>
+        //Exercício 3: Agenda de contatos com edição
+        //Crie uma agenda de contatos que permita cadastrar,
+        //vizualizar, editar e excluir contatos,
+        //Utilize switch-case while e estruturas condicionais para gerencias as operações.
+        let loopBrake = true
+        let arrayAgenda = []
+
+        while (loopBrake) {
+            
+        
+        let escolhaUsuario = parseInt(prompt(`
+
+    Escolha uma opção abaixo:
+    ---------------------------
+        [1] Cadastrar Úsuario
+        [2] Vizualizar um úsuario
+        [3] Atualziar um úsuario
+        [4] Excluir um úsuario
+        [5] Sair do programa CRUD
+       ` ))
+        
+        switch (escolhaUsuario) {
+            case 1:
+
+                //Criar a variável para receber a data atual e exibir na agenda
+                let nome = prompt("Informe seu primeiro nome:")
+                let numTelefone = prompt("Informe seu número de teledone:")
+
+                arrayAgenda.push({ nome, numTelefone })
+
+                console.log(arrayAgenda)
+
+
+                alert("Úsuario cadastrado com sucesso na agenda!")
+
+                break;
+
+            case 2:
+                //listagem dos dados => percorrer o array de objetos (forEach - for)
+
+                break;
+
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+                alert("Até a próxima, velho amigo.")
+
+                 loopBrake = false
+                //process.exit();
+
+                break;
+
+            default:
+                alert("Opção inválida. Tente Novamente")
+
+
+                break;
+        }
+    }
+    </script>
+
+</body>
+
+</html>
