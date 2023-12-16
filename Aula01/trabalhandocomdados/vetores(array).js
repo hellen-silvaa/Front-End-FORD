@@ -10,13 +10,16 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
 //    indice  =   0    1   2    3        4 
 const valores = [18.0, 80, 43, 1.8888, "teste"]
 
 //var(array) -> definindo um indice 10 e atribuindo o valor de 967 para o array
 valores[10] = 967 // --> incluindo o indice 10 no array
 
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 console.log(`
     ${valores[0]}
@@ -25,6 +28,7 @@ console.log(`
     ${valores}
     ${valores.length} //extensão do nosso array (numeral)
 `);
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -74,36 +78,44 @@ console.log(`
 
 // //splice => substituir valores(altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.)
 
-// // metodo          índice   qntd de valores   novo valor
-// deleteArray.splice(   1    ,       1        ,   'melão')
-// console.log (deleteArray)
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// //4 - filter -> funções cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
-//                       0,  1,  2,  3,  4
-// const filterArray = [ 1, 50, 20, ,35, 60]
+// metodo          índice   qntd de valores   novo valor
+deleteArray.splice(   1    ,       1        ,   'melão')
+console.log (deleteArray)
 
-// console.log(filterArray);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// const arrayFiltrado = filterArray.filter ((findArray) => {
-//     console.log (findArray);
-//     //bloco execução
+//4 - filter -> funções cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+                      0,  1,  2,  3,  4
+const filterArray = [ 1, 50, 20, ,35, 60]
 
-//     return findArray  > 20
-// })
+console.log(filterArray);
 
-// //saída de dados
-// console.log(arrayFiltrado);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// //5 - map -> modifica o array existente -> criar um novo array modificado -. funções
-// const mapArray = [10,15,20,25,30,35]
-// console.log (mapArray);
+const arrayFiltrado = filterArray.filter ((findArray) => {
+    console.log (findArray);
+    //bloco execução
 
-// //inicio modificação array
-// const arrayModificado = mapArray.map ((mapArrayModificado) => {
-//     return mapArrayModificado * 2
-// })
+    return findArray  > 20
+})
 
-// console.log (arrayModificado);
+//saída de dados
+console.log(arrayFiltrado);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//5 - map -> modifica o array existente -> criar um novo array modificado -. funções
+const mapArray = [10,15,20,25,30,35]
+console.log (mapArray);
+
+//inicio modificação array
+const arrayModificado = mapArray.map ((mapArrayModificado) => {
+    return mapArrayModificado * 2
+})
+
+console.log (arrayModificado);
 
 //=> Arrow Function
 
@@ -138,24 +150,23 @@ console.log(arraySortNumber);
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//*************Exercício ***************/
-//crie 2 arrays: nomes e sobrenomes
-//crie um terceiro array de nomesCompleto
-//ao final, exiba os nomes completos no console com o foreach
-//é necessário conter pelo menos 5 nomes
-//utilizar arrow functions
-//se necessário, utilize outros métodos de array
+// ***************** Exercício *******************
+// crie 2 arrays: nomes e sobrenomes
+// crie um terceiro array de NomesCompleto
+// ao final, exiba os nomes completos no console com o foreach
+// é necessário conter pelo menos 5 nomes
+// utilizar arrow functions
+// se necessário, utilize outros métodos de array.
 
 
-const nomesArray = ["Hellen", "Guilherme", "Ivanilson", "Rafael", "Renata"];
-const sobrenomesArray = ["Silva", "Amorim", "Félix", "Perdigão", "Santos" ];
+const nomeArray = ["Hellen", "Guilherme", "Ivanilson", "Rafael", "Renata"];
+const sobrenomeArray = ["Silva", "Amorim", "Félix", "Perdigão", "Santos" ];
 
-const nomesCompletosArray = nomesArray.forEach(element => {nomesCompletosArray
-    
-});(sobrenomesArray)
-console.log(nomesCompletosArray);
+const nomeCompletoArray = nomeArray.map((nome , index) => nome + " " + sobrenomeArray[index]);
 
+console.log(nomeCompletoArray);
 
 
 

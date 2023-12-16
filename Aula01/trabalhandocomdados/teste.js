@@ -1,12 +1,10 @@
 
-const nomesArray = ["Hellen", "Guilherme", "Ivanilson", "Rafael", "Renata"];
-const sobrenomesArray = ["Silva", "Amorim", "Félix", "Perdigão", "Santos" ];
 
-const nomesCompletosArray = nomesArray.map((element) => {nomesCompletosArray
-    
-});(sobrenomesArray) 
+const nomeArray = ["Hellen", "Guilherme", "Ivanilson", "Rafael", "Renata"];
+const sobrenomeArray = ["Silva", "Amorim", "Félix", "Perdigão", "Santos" ];
 
-console.log(nomesCompletosArray);
+const nomeCompletoArray = nomeArray.map((nome , index) => nome + " " + sobrenomeArray[index]);
 
-nomesCompletosArray.forEach(nomesCompleto => console.log(nomesCompleto));
+console.log(nomeCompletoArray);
+
 
