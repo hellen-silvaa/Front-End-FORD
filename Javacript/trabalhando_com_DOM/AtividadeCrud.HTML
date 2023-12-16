@@ -19,15 +19,16 @@ excluir: com base no email -->
 
 <body>
     <script>
+        let escolhaUsuario;
+            const dataAtual = new Date();
+            dataAtual.toLocaleString('pt-BR', { timezone: 'UTC' });
         //Exercício 3: Agenda de contatos com edição
         //Crie uma agenda de contatos que permita cadastrar,
         //vizualizar, editar e excluir contatos,
         //Utilize switch-case while e estruturas condicionais para gerencias as operações.
         let loopBrake = true
         let arrayAgenda = []
-
         while (loopBrake) {
-
             // Criação de um menu com as 4 operações que o usuário pode realizar (Cadastrar, listar, atualizar, deletar)
             let escolhaUsuario = parseInt(prompt(`
             
@@ -54,7 +55,7 @@ excluir: com base no email -->
                     let email = prompt("Informe seu email:")
                     let senha = prompt("Informe a sua senha:")
 
-                    arrayAgenda.push({ nome, email, senha, dataUniversal })
+                    arrayAgenda.push({ nome, email, senha, dataAtual })
 
                     // console.log(arrayAgenda)
                     alert("Úsuario cadastrado com sucesso na agenda!")
@@ -66,8 +67,10 @@ excluir: com base no email -->
 
                     let listaDeContatos = "Lista de contatos: \n";
                     for (let listaArray of arrayAgenda) {
-                        listaDeContatos += `Nome: ${listaArray.nome}, Email: ${listaArray.email}, Senha:${listaArray.senha},\n`
+                        listaDeContatos += `Nome: ${listaArray.nome}, Email: ${listaArray.email}, Senha:${listaArray.senha}, data de criação: ${dataAtual.toLocaleString('pt-BR', { timezone: 'UTC' })}\n`
+                        
                     }
+                    
                     alert(listaDeContatos)
 
                     break;
@@ -78,6 +81,9 @@ excluir: com base no email -->
                     //atualizar: com base no email 
                     let emailAtualizar = prompt("Informe o seu email para realizar a edição:")
                     let emailBuscado = arrayAgenda.find(findUser => findUser.email === emailAtualizar)
+                    let dataAtual= ${dataAtual.toLocaleString('pt-BR', { timezone: 'UTC' })}\n`
+                        }
+
                     
 
                     if (emailBuscado) {
@@ -111,7 +117,7 @@ excluir: com base no email -->
                     //excluir: com base no email -->
 
                     let emailExcluir = prompt("Informe o seu email para excluir da lista:")
-                    let emailBuscadoExcluir = arrayAgenda.findIndex(deleteUser => deleteUser.email === emailExcluir)
+                    let emailBuscadoExcluir = arrayAgenda.findIndex(deleteUser => deleteUser.email === emailExcluir) 
 
                     if (emailBuscadoExcluir !== -1) {
                         arrayAgenda.splice(emailBuscadoExcluir, 1)
