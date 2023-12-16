@@ -62,21 +62,21 @@
                     break;
 
 
-                    case 3:
-          //realizar método de atualizar agenda
+                case 3:
+                    //realizar método de atualizar agenda
 
-          let contatoAtualizar = prompt("Informe o nome para realizar a edição:")
-          let contatoBuscado = arrayAgenda.find(findUser => findUser.nome === contatoAtualizar)
+                    let contatoAtualizar = prompt("Informe o nome para realizar a edição:")
+                    let contatoBuscado = arrayAgenda.find(findUser => findUser.nome === contatoAtualizar)
 
-          if (contatoBuscado) {
-            contatoBuscado.numTelefone = prompt("informe o novo número de celular:")
+                    if (contatoBuscado) {
+                        contatoBuscado.numTelefone = prompt("informe o novo número de celular:")
 
-            alert("usuário cadastrado com sucesso")
-          }else{
-            alert("Nenhum usuário foi encontrado no sistema!")
-          }
+                        alert("usuário cadastrado com sucesso")
+                    } else {
+                        alert("Nenhum usuário foi encontrado no sistema!")
+                    }
 
-          break;
+                    break;
                     break;
 
 
@@ -89,7 +89,7 @@
                     let contatoExcluir = prompt("Informe o nome para apagar da lista:")
                     let contatoBuscadoExcluir = arrayAgenda.findIndex(deleteUser => deleteUser.nome === contatoExcluir)
 
-                    if (contatoBuscadoExcluir !==-1) {
+                    if (contatoBuscadoExcluir !== -1) {
                         arrayAgenda.splice(contatoBuscadoExcluir, 1)
                     }
                     else {
