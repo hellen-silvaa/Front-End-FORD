@@ -15,6 +15,7 @@
         //Utilize switch-case while e estruturas condicionais para gerencias as operações.
         let loopBrake = true
         let arrayAgenda = []
+ 
 
         while (loopBrake) {
 
@@ -49,13 +50,20 @@
                 case 2:
                     //listagem dos dados => percorrer o array de objetos (forEach - for)
 
+                    let listaDeContatos = "Lista de contatos: \n";
+
                     for (let listaArray of arrayAgenda) {
-                        //nom: nomeArray, numeroTelefone
+
+                         listaDeContatos += `Nome: ${listaArray.nome}, Número de telefone: ${listaArray.numTelefone}\n`
+                     
                     }
+                    alert (listaDeContatos)
 
                     break;
 
                 case 3:
+                    //Realizar método de atualizar agenda
+                    
 
                     break;
                 case 4:
