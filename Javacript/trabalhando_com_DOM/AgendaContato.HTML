@@ -63,10 +63,29 @@
 
                 case 3:
                     //Realizar método de atualizar agenda
+
+                    let contatoAtualizar = prompt("Informe o nome para realizar a edição:")
+                    let contatoBuscado = arrayAgenda.find(findUser.nome === contatoAtualizar)
+                    if (contatoBuscado){
+                        contatoBuscado.numTelefone = prompt("Informe o seu novo número de celular:")
+                    }
                     
 
                     break;
                 case 4:
+                    //Encontrar o úsuario a ser deletado
+                    //Informar o nome a ser excluído
+                    //Realizar a comparação
+                    //Realizar o delete do usuário
+
+                    let contatoDeletar = prompt("Informe o nome para realizar a edição:")
+                    let contatoBuscado = arrayAgenda.find(findUser.nome === contatoDeletar)
+                    if (contatoBuscado){
+                        contatoBuscado.numTelefone = prompt("Informe o seu novo número de celular:")
+                    }
+
+
+                    
 
                     break;
                 case 5:
