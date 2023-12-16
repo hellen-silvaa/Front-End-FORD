@@ -17,9 +17,9 @@
         let arrayAgenda = []
 
         while (loopBrake) {
-            
-        
-        let escolhaUsuario = parseInt(prompt(`
+
+
+            let escolhaUsuario = parseInt(prompt(`
 
     Escolha uma opção abaixo:
     ---------------------------
@@ -29,49 +29,49 @@
         [4] Excluir um úsuario
         [5] Sair do programa CRUD
        ` ))
-        
-        switch (escolhaUsuario) {
-            case 1:
 
-                //Criar a variável para receber a data atual e exibir na agenda
-                let nome = prompt("Informe seu primeiro nome:")
-                let numTelefone = prompt("Informe seu número de teledone:")
+            switch (escolhaUsuario) {
+                case 1:
 
-                arrayAgenda.push({ nome, numTelefone })
+                    //Criar a variável para receber a data atual e exibir na agenda
+                    let nome = prompt("Informe seu primeiro nome:")
+                    let numTelefone = prompt("Informe seu número de teledone:")
 
-                console.log(arrayAgenda)
+                    arrayAgenda.push({ nome, numTelefone })
 
-
-                alert("Úsuario cadastrado com sucesso na agenda!")
-
-                break;
-
-            case 2:
-                //listagem dos dados => percorrer o array de objetos (forEach - for)
-
-                break;
-
-            case 3:
-
-                break;
-            case 4:
-
-                break;
-            case 5:
-                alert("Até a próxima, velho amigo.")
-
-                 loopBrake = false
-                //process.exit();
-
-                break;
-
-            default:
-                alert("Opção inválida. Tente Novamente")
+                    console.log(arrayAgenda)
 
 
-                break;
+                    alert("Úsuario cadastrado com sucesso na agenda!")
+
+                    break;
+
+                case 2:
+                    //listagem dos dados => percorrer o array de objetos (forEach - for)
+
+                    break;
+
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+                case 5:
+                    alert("Até a próxima, velho amigo.")
+
+                    loopBrake = false
+                    //process.exit();
+
+                    break;
+
+                default:
+                    alert("Opção inválida. Tente Novamente")
+
+
+                    break;
+            }
         }
-    }
     </script>
 
 </body>
