@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*   font-family: "Montserrat", sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*   font-family: "Inter", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* criação de variáveis */
+:root {
+    --font-title: "Montserrat", sans-serif;
+    --font-paragraf: "Inter", sans-serif;
+
+    --primary-color: #DA2535;
+    --secondary-color: #616161;
+    --bg-cards: #F3F3F3;
+}
+
+.container-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-flex>ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.header-flex a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-paragraf);
+    font-weight: 500;
+}
+
+.button {
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1.5px solid black;
+    cursor: pointer;
+    font-family: var(--font-paragraf);
+    font-weight: 600;
+}
+
+.button.white {
+    background-color: white;
+    color: black;
+}
+
+/* banner */
+.banner-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10vh;
+    padding: 20px;
+}
+
+.banner-flex>article {
+    width: 40%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.banner-flex>article h1 {
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.banner-flex>article p {
+    font-family: var(--font-paragraf);
+    font-size: .8rem;
+}
+
+.button.red {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+}
+
+.img-hashi {
+    height: 400px;
+}
+
+.img-hashi>img {
+    height: 100%;
+}
+
+.prato {
+    width: 50%;
+}
+
+.prato>img {
+    width: 100%;
+}
+
+.banner-flex a {
+    font-size: .8rem;
+    font-family: var(--font-paragraf);
+    color: var(--primary-color);
+}
+
+/* section cards */
+
+.cards-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#h1 {
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: -10vh;
+    font-family: var(--font-title);
+}
+
+.cards-flex__infos {
+    background-color: var(--bg-cards);
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    height: 310px;
+    justify-content: flex-end;
+    font-family: var(--font-paragraf);
+}
+
+.cards-flex__infos>p {
+    width: 70%;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.cards-flex__style>img {
+    position: relative;
+    top: 110px;
+    height: 220px;
+    left: 14%;
+}
+
+/* user infos */
+#h1-user {
+    text-align: center;
+    margin: 5%;
+    font-family: var(--font-title);
+}
+
+.user-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-flex__infos {
+    background-color: var(--bg-cards);
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.user-flex__infos>img {
+    width: 20%;
+}
+
+.user-flex__infos>h1 {
+    font-family: var(--font-title);
+    font-weight: 400;
+}
+
+.user-flex__infos>p {
+    font-family: var(--font-paragraf);
+    color: var(--secondary-color);
+}
+
+/* mapa */
+
+.info-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-location>h1{
+    margin-top: 5%;
+    font-family: var(--font-title);
+}
+
+.info-location>img {
+    width: 87%;
+    margin: 5%;
+}
+
+.info-location__flex>input {
+    width: 450px;
+    height: 40px;
+    outline: none;
+    border: 1px solid black;
+    /*          top right bottom left  */
+    border-radius: 10px 0 0 10px;
+    margin-right: -8px;
+    padding: 10px 40px;
+}
+
+.info-location__flex>img{
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+
+
+.button.red-input {
+    border-radius: 0 10px 10px 0;
+    height: 41px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    margin-left: 0;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+footer h1{
+    font-family: var(--font-title);
+    padding: 10px;
+}
+
+footer p {
+    font-family: var(--font-paragraf);
+    padding: 10px;
+    cursor: pointer;
+}
