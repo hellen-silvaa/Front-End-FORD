@@ -1,0 +1,193 @@
+ @font-face {
+     font-family: 'font-paragrafo-bold';
+     src: url(assets/fontes/inter/static/Inter-Bold.ttf);
+ }
+
+ @font-face {
+     font-family: 'font-titulo';
+     src: url(assets/fontes/titiliumweb/TitilliumWeb-Bold.ttf);
+ }
+
+ /* reset da pagina  */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .container-grid {
+     width: 90%;
+     margin: 0 auto;
+     max-width: 1200px;
+     justify-content: space-between;
+ }
+
+ /* começando estilização do header */
+ /* scroll suave na pagina html */
+ html {
+     scroll-behavior: smooth;
+ }
+
+ header {
+     background: linear-gradient(360deg, transparent, #FFFFFF 1%, #B47EDA 50%);
+     height: 90px;
+     /* width: 1440px; */
+
+ }
+
+ /*responsavel pela organização dos componentes do header */
+ .links-header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     color: white;
+     align-items: center;
+     padding: 30px;
+
+
+ }
+
+ /* remover a estilização que vem por padrao nos links da ul li  */
+ .links-header ul li {
+     list-style-type: none;
+     text-decoration: none;
+     /*remove as bolinhas laterais*/
+ }
+
+
+ .links-header .nav-links a {
+     text-decoration: none;
+     /* realiza a remoção do sublinhado dos links */
+     color: white;
+     font-family: font-paragrafo-bold;
+     font-size: 20px;
+     letter-spacing: 1px;
+     /*realiza o espaçamento interno dos links*/
+     align-items: center;
+
+
+ }
+
+ .links-header .nav-links a:hover {
+     /* efeito de quando passa o mause sobre os links o mesmo muda de cor para preto*/
+     color: rgb(226, 1, 207);
+     transition: 0.2s;
+     /* tempo para realizar mudança de cor*/
+ }
+
+ .nav-links {
+     /*realiza oespaçamento dos links e deixa os mesmos na horizontal*/
+     width: 350px;
+     display: flex;
+     justify-content: space-evenly;
+
+
+
+ }
+
+ .input-search input {
+     /* realiza a estilização do input-search dentro do header declarando as fontes, bordas, largura e altura*/
+     width: 387px;
+     height: 41px;
+     border-radius: 20px;
+     border: none;
+     background: none;
+     outline: none;
+     font-family: font-paragrafo-bold;
+     font-size: 15px;
+ }
+
+ .b.card {
+
+     display: flex;
+     flex-direction: row;
+     background-color: #f9eac3;
+     padding: 300px;
+     height: 1148pxx;
+
+
+ }
+
+ .icon {
+     width: 36px;
+     height: 36px;
+
+
+ }
+
+ /* estilização dos cards  declarando as fontes, bordas, largura e altura*/
+ .card-1 {
+     margin-top: 90px;
+     background: linear-gradient(360deg, transparent, #FFFEFE 10%, #F1D7FE 50%);
+     width: 1148px;
+     height: 300px;
+     padding: 30px;
+     justify-content: center;
+
+
+ }
+
+ .card-2 {
+     background: linear-gradient(360deg, transparent, #FFFEFE 10%, #F1D7FE 50%);
+     width: 1148px;
+     height: 300px;
+     padding: 30px;
+
+ }
+
+ .card-3 {
+     background: linear-gradient(360deg, transparent, #FFFEFE 10%, #F1D7FE 50%);
+     width: 1148px;
+     height: 300px;
+     padding: 30px;
+ }
+
+
+ .card-1:hover {
+     box-shadow: 15px 0px 35px;
+ }
+
+ .card-2:hover {
+     box-shadow: 15px 0px 35px;
+ }
+
+ .card-3:hover {
+     box-shadow: 15px 0px 35px;
+
+ }
+
+ /* alinhamento */
+ .data-card {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .paragrafo-card {
+
+     font-family: font-paragrafo-bold;
+     font-weight: bold;
+     color: rgb(0, 0, 0);
+     text-align: justify;
+     justify-content: center;
+ }
+
+ .cor {
+     background: linear-gradient(180deg, transparent, #FFFEFE 100%, #F1D7FE 50%);
+
+ }
+
+ .photo {
+     margin-top: 90px;
+     margin-bottom: -5px;
+ }
+
+ .footer {
+     background-color: #B47EDA;
+     height: 90px;
+     color: #FFFEFE;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(180deg, transparent, #FFFFFF 1%, #B47EDA 50%);
+
+ }
