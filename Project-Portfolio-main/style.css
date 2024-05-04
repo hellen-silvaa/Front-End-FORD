@@ -1,0 +1,352 @@
+
+/* reset da pagina  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+  /* realizar scroll suave na minha pagina html */
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /*estilo da parte de navegação*/
+  header {
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+    height: 90px;
+  }
+  .container-grid {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+  }
+  
+  .container-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #121212;
+  }
+  
+  .container-menu h1 {
+    color: #D24074;
+  }
+  
+  .container-menu h1:hover {
+    color: #6518B4; 
+    cursor: pointer;
+  }
+  .container-menu .links ul li{
+    display: inline;
+    
+  }
+  
+  .links ul li a {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+  }
+
+  .links ul li a:hover {
+    color: #D24074;
+  }
+  
+  /*estilo do main */
+  
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #121212;
+  }
+  
+ .container-name-user {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 100%;
+    background-image: url(/assets/img/Looper\ BG.png);
+    background-position: right 80px;
+    background-repeat: no-repeat;
+    background-color: #121212;
+    height: 734px;
+  }
+  
+  .container-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .name-user {
+    width: 50%;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .name-user h1 {
+    font-size: 58px;
+    color: #00D2DF;
+  }
+  
+  .social-media {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .cards-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 153px;
+    height: 53px;
+    gap: 12px;
+  }
+  
+  .cards-social-media  a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .GitHub {
+    border-radius: 4px;
+    border: 2px solid #D24074;
+  }
+  
+  .Linkedin{
+    border-radius: 4px;
+    border: 2px solid #9358F7;
+  }
+  
+  /*estilo da segunda parte do main sobre mim*/
+  
+  .container-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 564px;
+    background-color: #151515;
+  }
+  
+  .container-sobre-mim {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container-sobre-mim .photo {
+    width: 367px;
+    border-radius: 5px;
+    border-left: 5px solid #00D2DF;
+  }
+  
+  .container-sobre-mim .photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .sobre-mim {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 559px;
+    color: white;
+  }
+  
+  .sobre-mim h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  .sobre-mim h4 {
+    line-height: 3;
+    font-size: 18px;
+  }
+  
+  .sobre-mim p {
+    line-height: 2;
+  }
+  
+  .curriculo {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .social-media {
+    margin-bottom: 30px;
+  }
+  
+  /*estilo da terceira seção: experiência*/
+  .container-color{
+    background-color: #121212;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .experience{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:218px ;
+    height: 402px;
+    gap: 20px;
+  }
+  
+  .experience h1 {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .container-experience ul li {
+    text-transform: none;
+  }
+  
+  .container-experience ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  .container-experiencia ul li a:hover {
+    color: #00D2DF;
+  }
+  
+  .aprendiz{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 630px;
+    height: 205px;
+    color: white;
+  }
+  
+  .texto-aprendiz{
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .aprendiz span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00D2DF;
+  }
+  
+  /* estilo da quarta parte do main projetos */
+  .titulo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    color: white;
+  }
+  .container-project {
+    display: flex;
+    justify-content: center;
+    height: 1325px;
+    width: 100%;
+    background-color: #151515;
+  }
+  .container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .project{
+    display: flex;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 1px solid red;
+  }
+  
+  .cards-project {
+    width: 530px;
+    height: 438px;
+    margin-bottom: 20px;
+  }
+  
+  .img-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 6px solid #00D2DF;
+    border-radius: 5px;
+    width: 530px;
+    height: 200px;
+    background-color: #121212;
+  }
+  
+  .img-project h1 {
+      font-size: 30px;
+      color: #00D2DF;
+  }
+  
+  .texto-project {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .texto-project h1 {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .texto-project p {
+    font-size: 18px;
+    color: white;
+  }
+  
+  .texto-project span {
+    color: #00D2DF;
+    font-size: 17px;
+  }
+  
+  footer {
+    width: 100%;
+    height: 100px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .container-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container-footer span {
+    color: #00D2DF;
+  }
