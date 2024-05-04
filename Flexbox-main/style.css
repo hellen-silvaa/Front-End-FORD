@@ -1,0 +1,526 @@
+.titulo-pagina {
+    text-align: center;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkblue;
+    margin: 10px;
+    /* margem */
+}
+
+.nome-propriedade {
+    font-size: 2em;
+    font-weight: 500;
+    /* largura da letra */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+    padding: 20px;
+
+}
+
+.nome-propriedade-shorthand {
+    font-size: 2em;
+    font-weight: 700;
+    /* largura da letra */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(9, 255, 0);
+    padding: 20px;
+
+}
+
+.valor-propriedade {
+    font-size: 1.5em;
+    font-weight: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding-top: 30px;
+}
+
+.container-row {
+    /* permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal */
+    display: flex;
+    flex-direction: row;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+
+}
+
+.container-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+
+}
+
+.container-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+
+}
+
+.bloco-1 {
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bloco-2 {
+    background-color: rgb(212, 123, 247);
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.bloco-3 {
+    background-color: rgb(248, 221, 99);
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bloco-1 {
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bloco-2 {
+    background-color: rgb(212, 123, 247);
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.bloco-3 {
+    background-color: rgb(248, 221, 99);
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bloco-1-sem-altura {
+    background-color: aqua;
+    /* height: 150px; */
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bloco-2-sem-altura {
+    background-color: rgb(212, 123, 247);
+    /* height: 150px; */
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.bloco-3-sem-altura {
+    background-color: rgb(248, 221, 99);
+    /* height: 150px; */
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bloco-1-fonte-pequena-40px {
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bloco-2-fonte-media-60px {
+    background-color: rgb(212, 123, 247);
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.bloco-3-fonte-grande-90px {
+    background-color: rgb(248, 221, 99);
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.container-justifiy-center {
+    /* centralizar os itens horizontalmente dentro do container. */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #c7b6f9;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-justifiy-flex-start {
+    /* faz com que todos os elementos estejam no início do eixo principal */
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    justify-content: flex-start;
+    background-color: #c7b6f9;
+    height: 500px;
+
+}
+
+.container-justifiy-flex-end {
+    /* define que o conteúdo será alinhado a partir do final do eixo principal. */
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    justify-content: flex-end;
+    background-color: #c7b6f9;
+    height: 500px;
+
+}
+
+.container-justifiy-space-between {
+    /* itens flexíveis com espaço entre as linhas */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 16px;
+    background-color: #c7b6f9;
+    height: 500px;
+
+}
+
+.container-justifiy-space-around {
+    /* itens flexíveis com espaço antes, entre e depois das linhas */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 16px;
+    background-color: #c7b6f9;
+    height: 500px;
+}
+
+.container-justifiy-space-evenly {
+    /* os itens são distribuídos igualmente no espaço disponível. */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 16px;
+    background-color: #c7b6f9;
+    height: 500px;
+}
+
+
+.container-align-items-center {
+    /* aling-items:alinha os objetos no eixo secundário e também é depende do flex direction*/
+    display: flex;
+    align-items: center;
+    /*centraliza verticalmente.*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #b6f9f6;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-align-items-flex-start {
+    /* Os itens são posicionados no início do contêiner */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #b6f9f6;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-align-items-flex-start {
+    /* Os itens são posicionados no início do contêiner */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #b6f9f6;
+    padding: 16px;
+    height: 500px;
+}
+
+
+.container-align-items-flex-end {
+    /* Os itens são posicionados no final do contêiner */
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #b6f9f6;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-align-items-baseline {
+    /* Os itens são posicionados na linha de base do contêiner */
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #b6f9f6;
+    padding: 16px;
+    height: 500px;
+}
+
+
+
+.container-align-items-stretch {
+    /* Os itens são esticados para caber no espaço */
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #b6f9f6;
+    padding: 16px;
+    height: 500px;
+}
+
+
+.container-flexwrap-nowrap {
+    /*  Valor padrão. Especifica que os itens flexíveis não serão encapsulados*/
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f9cbb6;
+    padding: 16px;
+    height: 500px;
+}
+
+
+.container-flexwrap-wrap {
+    /* Especifica que os itens flexíveis serão encapsulados, se necessário */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f9cbb6;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-flexwrap-wrap-reverse {
+    /* Especifica que os itens flexíveis serão encapsulados, se necessário, na ordem inversa */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    background-color: #f9cbb6;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-flexflow-rownowrap {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #e9d477;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-aling-content-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #6607ff;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-aling-content-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: start;
+    background-color: #6607ff;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-aling-content-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: end;
+    background-color: #6607ff;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-aling-content-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: #6607ff;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-aling-content-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: #6607ff;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-aling-content-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    background-color: #6607ff;
+    padding: 16px;
+    height: 500px;
+}
+
+
+.menu-navegacao nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none; 
+    text-indent: 90px;
+    /* padding: 15px;
+    margin-top: 20px; */
+    justify-content: center;
+    padding: 30px;
+
+   
+    
+}
+ .menu-navegacao li a { /*quando utilizamos menu-navegacao especificamos que é somente o "li a" presente no menu que sofrerá modificada e não de forma geral em todo o código */
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-navegacao a:hover{
+    transition: .5s;
+    color: #ffffff;
+    background-color: #804661;
+    padding: 20px;
+    border-radius: 13px;
+}
+
+.btn-fixed {
+    visibility: visible;
+    text-decoration: none;
+    color: #000000;
+}
+
