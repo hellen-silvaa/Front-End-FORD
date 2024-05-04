@@ -1,0 +1,246 @@
+
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #ad9245; 
+    --secondary: #95989a;
+    --text-color: #ff0000;
+    --text-secondary: #000;
+    --text-tertiary: #eedbdb;
+  }
+  
+  * {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    background-color: #e0caaf;
+}
+
+
+h1.page-title {
+    /* SHORTHAND MARGENS*/    
+    margin: -1px auto 5px;
+    padding-left: 10px;
+    width: 80%;
+    font-size: 30pt;
+    font-weight: 600;
+    color: #ffffff;       
+}
+
+header {
+    background-color: #5a3636;
+    
+  
+    
+}
+nav ul {
+    /* float: right; */
+    margin-right: 80px;
+    list-style: none;
+    /* position: relative; */
+    display: flex;
+    text-indent: 90px;
+    /* padding: 15px;
+    margin-top: 20px; */
+    justify-content: space-between;
+    justify-content: right;
+    padding: 30px;
+
+   
+    
+}
+li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    transition: .5s;
+    color: #ffffff;
+    background-color: #6e451f;
+    padding: 20px;
+    border-radius: 13px;
+}
+h2 {
+    /* margin: 5px auto 25px; */       
+
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    width: 80%;
+    font-size: 15pt;
+    color: #ffffff;   
+}
+
+article{
+    margin: 50px 0 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+width: 80%;
+margin: 40px auto 5px;
+padding-left: 10px;
+}
+
+.article-title {
+/* SHORTHAND MARGENS*/    
+margin: 40px auto 5px;    
+font-size: 22pt;    
+color: #8E3200;       
+}
+
+
+
+.titulo-produto {
+    margin: 40px 0px 5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+    font: weight 900px;
+    color: #6d351a;
+    background-color: #eedbdb;
+    padding:10px;
+    text-align: center;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.page-sub {
+    color: #6d351a ;
+    margin: 40px auto 5px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    width: 80%;
+    font-size: 40pt;
+    background-size: 500px;
+    font-weight: bold;
+
+}
+
+.imagens {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 90px;
+    padding-left: 80px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+
+
+ /* Footer */
+ #footer {
+    background-color: #472a2a;
+    font-family: rubik, sans-serif;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* CONTATO */
+  /* Event form */
+  #event-subscription {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../img/hrz-5.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+  }
+  
+  #disclaimer h2,
+  #disclaimer .event-date {
+    color: var(--primary);
+  }
+  
+  #disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+  
+  #disclaimer .about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  
+  #disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+  }
+  
+  #disclaimer .event-date {
+    font-weight: bold;
+  }
+  
+  #subscription-form {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+  }
+  
+  #subscription-form p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+  }
+  
+  .form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
