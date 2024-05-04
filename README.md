@@ -1,10 +1,4 @@
-# Front-End-FORD
+# Sapataria do Sr. Oswaldo
+## Estudos com HTML e CSS
 
-O Ford <Enter> é um programa de capacitação na área de tecnologia desenvolvido pela Ford Brasil e pelo Ford Motor Company Fund, em parceria com o SENAI-SP
-
-
-Calculadora -->  https://front-end-ford.vercel.app/
-
-
-Projeto ViaCEP - JS -> https://front-end-ford-f7rc.vercel.app/
-
+Atividade sapataria do curso SENAI Ford Enter - Turma 4 - Sábado
