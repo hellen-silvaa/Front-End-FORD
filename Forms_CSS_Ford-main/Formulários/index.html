@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>
+                Página de criação de formulários
+            </h1>
+        </div>
+    </header>
+
+    <!-- Primeiro formulário usando label e input -->
+    <form class="form01">
+        <label for="Primeiro Nome">Nome:</label>
+        <input type="text" name="Nome01" id="" placeholder="Digite seu nome aqui...">
+        <label for="Sobrenome">Sobrenome:</label>
+        <input type="text" name="Nome02" id="" placeholder="Digite seu sobrenome aqui...">
+    </form>
+    <hr>
+
+    <!-- Form para realizar o cadastro de uma pessoa -->
+    <form class="form02">
+
+         <!-- "text" exibe um campo de entrada de texto de linha única -->
+        <label for="Primeiro Nome">Nome:</label>
+        <input type="text" name="nameUser" id="" placeholder="Informe o seu primeiro nome...">
+
+        <label for="Sobrenome">Sobrenome:</label>
+        <input type="text" name="nameUser" id="" placeholder="Informe o seu sobrenome aqui...">
+
+        <label for="email">Email:</label>
+        <input type="email" name="emaillUser" id="" placeholder="Informe o seu melhor e-mail...">
+
+        <!-- "date" permite o usuário informar uma data -->
+        <label for="idade">Data de nascimento:</label>
+        <input type="date" name="idade do usuario">
+
+
+        <h4>Informe o seu gênero</h4>
+        <!-- "radio" Exibe um botão de opção (para selecionar uma das muitas opções) -->
+        <input type="radio" name="genero" id="">
+        <label for="genero">Masculino</label>
+        <input type="radio" name="genero" id="">
+        <label for="genero">Feminino</label>
+
+        <label for="comentario">Comentário:</label>
+        <textarea name="" id="" cols="60" rows="10" placeholder="Descreva sobre você..."></textarea>
+
+        
+        <label for="interest">Principal interesse:</label>
+        <select name="interest">
+          <option value="" disabled selected>Selecione</option>
+          <option value="Água">Água</option>
+          <option value="Suco">Suco</option>
+          <option value="Milk-shake">Milk-shake</option>
+          <option value="Vitamina">Vitamina</option>
+        </select><hr>
+
+        <!-- "submit" Exibe um botão enviar (para enviar o formulário) -->
+        <button type="submit" onclick="clicarBotao() ">Cadastre-se</button>
+    </form>
+
+    <!-- mostrar ao usuário uma mensagem e um botão de confirmação de que o usuário tenha visto a mensagem. -->
+    <script>
+        function clicarBotao()
+        {
+        alert("Cadastro realizado com sucesso!");
+        }
+        </script>
+
+
+<script>
+function clicarBotao()
+{
+var x;
+var r=confirm("Escolha um valor!");
+if (r==true)
+  {
+  x="você pressionou OK!";
+  }
+else
+  {
+  x="Você pressionou Cancelar!";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+</body>
+
+</html>
