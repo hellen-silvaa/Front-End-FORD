@@ -1,0 +1,144 @@
+
+
+/* reset da página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-grid{
+    /* width: 90%; */
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+
+header{
+    display: flex;
+    height: 108px;
+    background-color: #ffffff;
+    box-shadow: 3px 0 10px rgba(0,0,0, 0.5);
+    
+
+
+
+    
+}
+/* header-flex é responsável pela organização dos componentes do header */
+.header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 1920px; */
+    height: 108px;
+
+}
+.logo-header{
+    display: flex;
+    width: 331px;
+    height: 64px;
+    align-items: flex-start;
+}
+
+/* remover a estilização que vem por padrão nos links da ul e li  */
+.links-header ul li {
+    /* remove as bolinhas laterais */
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: space-between;
+
+}
+/* /* realiza a estilização dos links dentro da nossa header  */
+.links-header .nav-links a{
+    /* realiza a remoção do sublinhado dos links  */
+    text-decoration: none;
+    color: black;
+    font-family: font-paragrafo-bold;
+    font-size: 20px;
+    /* realiza o espaçamento interno dos links */
+    letter-spacing: 1px;
+}
+
+/* efeito de quando passa o mouse sobre os links, o mesmo muda de cor para preto */
+.links-header .nav-links a:hover{
+    color: black;
+    /* tempo para realizar a mudança de cor  */
+    transition: 0.2s;
+}
+/* realiza o espaçamentos dos links e deixa os mesmos na horizontal */
+.nav-links{
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+/* MAIN */
+.botoes{
+    display: flex;
+    align-items: flex-end;
+}
+.central-dos-botoes{
+    
+}
+.button-edit{
+    display: flex;
+    align-items:
+}
+
+
+
+.imagens-invista {
+    display: flex;
+    
+    
+
+}
+.pessoas{
+    position: relative;
+    left: 500px;
+    bottom: 11px;
+    width: 679px ;
+    height: 350px ;
+    
+
+}
+
+.retangulo{
+    display: flex;
+   width: 900px;
+   height: 383px;
+}
+.textos{
+ 
+ 
+    display: flex;
+    position:absolute;
+    right: 320px;
+    bottom: 11px;
+    width: 679px ;
+    height: 431px ;
+
+ 
+    width: 933px;
+    height: 256px;
+    
+}
+
+.footer{
+
+    display: flex;
+    justify-content: center;
+    height: 46px;
+    background-color: #ffffff;
+    box-shadow: 3px 0 10px rgba(0,0,0, 0.5);
+    align-items: center;
+
+}
+

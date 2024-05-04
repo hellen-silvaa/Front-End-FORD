@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senai</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <img src="img/senai-logo.png" class="img-logo" alt="Senai-logo">
+        <div class="usuario">
+        <i class='bx bx-user nav_icon'></i>
+        <span class="nav_name">Guilherme</span>
+        </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <div class="nav_list">
+                    <a href="#" class="nav_link active">
+                        <i class='bx bx-grid-alt nav_icon'></i>
+                        <span class="nav_name">Dashboard</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class='bx bx-save nav_icon'></i>
+                        <span class="nav_name">Meus Cursos</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class='bx bx-message-square-detail nav_icon'></i>
+                        <span class="nav_name">Transações</span>
+                    </a>
+                    <a href="dashboard.html" class="nav_link">
+                        <i class='bx bx-user nav_icon'></i>
+                        <span class="nav_name">Aluno</span>
+                    </a>
+                </hr>
+                    <a href="#" class="nav_link">
+                        <i class='bx bx-folder nav_icon'></i>
+                        <span class="nav_name">Ajustes</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class='bx bx-user  nav_icon'></i>
+                        <span class="nav_name">Admin</span>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="nav_link">
+                <i class='bx bx-log-out nav_icon'></i>
+                <span class="nav_name">Desconectar</span>
+            </a>
+        </nav>
+    </div>
+    <div class="titulo">
+    <h2>Olá Administrador</h2>
+    <h3>Aqui estão as informações sobre sua vida acadêmica.</h3>
+    <hr>
+    </div>
+    <div class="container-main">
+        <div class="Container-Dashboard">
+            <div class="containers">
+                <h4>Turmas</h4>
+            </div>
+            <div class="containers">
+                <h4>Alunos Inscritos</h4>
+            </div>
+            <div class="containers">
+                <h4>Secretaria virtual</h4>
+            </div>
+            <div class="containers">
+                <h4>Àrea do docente</h4>
+            </div>
+        </div>
+        <div class="container-pai">
+            <div class="container-aulas">
+                <div class="Titulo-container">
+                    <h4>Turmas (3)</h4>
+                    <p class="p-red">ver todos</p>
+                </div>
+                
+                <div class="Container-Fotos">
+                    <div class="foto-container">
+                        <img src="img/unsplash__4sWbzH5fp8.png" alt="foto-container">
+                        <h3>Cibersegurança</h3>
+                    </div>
+                    
+                    <div class="foto-container">
+                        <img src="img/unsplash_rz3eCYGgGSc.png" alt="foto-container">
+                        <h3>Informática</h3>
+                    </div>
+                    
+                    <div class="foto-container">
+                        <img src="img/unsplash_wnXo6T_cb3s.png" alt="foto-container">
+                        <h3>Programação</h3>
+                    </div>
+                </div>
+            </div>
+            
+        <div class="container-grafico">
+            <h2>Gráfico de progresso dos seus cursos</h2>
+            <div class="grafico-1">
+                <p>Cibersegurança</p>
+                <span class="range-1"></span>
+            </div>
+            <div class="grafico-2">
+                <p>Informática</p>
+                <span class="range-2"></span>
+            </div>
+            <div class="grafico-2">
+                <p>Programação</p>
+                <span class="range-3"></span>
+            </div>
+            <div class="porcetagem">
+                <p>5%</p>
+                <p>15%</p>
+                <p>25%</p>
+                <p>50%</p>
+                <p>75%</p>
+                <p>90%</p>
+                <p>100%</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+</body>
+
+</html>
+<script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+   
+   const showNavbar = (toggleId, navId, bodyId, headerId) =>{
+   const toggle = document.getElementById(toggleId),
+   nav = document.getElementById(navId),
+   bodypd = document.getElementById(bodyId),
+   headerpd = document.getElementById(headerId)
+   
+   // validação das veriaveis 
+   if(toggle && nav && bodypd && headerpd){
+   toggle.addEventListener('click', ()=>{
+   // evento que mostra a side-bar assim que clicavel
+   nav.classList.toggle('show')
+   // evento que troca de icones do menu 
+   toggle.classList.toggle('bx-x')
+   // adicionar espaçamento no corpo
+   bodypd.classList.toggle('body-pd')
+   // adicionar espaçamento na header
+   headerpd.classList.toggle('body-pd')
+   })
+   }
+   }
+   
+   showNavbar('header-toggle','nav-bar','body-pd','header')
+   
+   /*===== link ativo =====*/
+   const linkColor = document.querySelectorAll('.nav_link')
+   
+   function colorLink(){
+   if(linkColor){
+   linkColor.forEach(l=> l.classList.remove('active'))
+   this.classList.add('active')
+   }
+   }
+   linkColor.forEach(l=> l.addEventListener('click', colorLink))
+   
+    
+   });
+    </script>
